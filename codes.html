@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREANA</title>
+	<link rel="shorcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="./style/style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+	crossorigin="anonymous"/>
+	
+</head>
+<body>
+<nav id="navbar">
+		<div class="nav-left">
+			<a href="index.html" ><img src="img/icon1.png"class="logo"></a> 
+			<ul class="nav-list">
+				<li class=nav-item><div >
+					<a href="index.html">
+
+					<i class="fa fa-home " aria-hidden="true"></i>
+					</a></div>
+
+				</li>
+				<li class=nav-item><a href="codes.html">
+					<i class="fa fa-code active" aria-hidden="true"></i>
+					</a></li>
+				<li class=nav-item><a href="messaging.html">
+					<i class="fa fa-comments" aria-hidden="true"></i>
+					</a></li>
+				<li class=nav-item><a href="Q&A.html">
+					<i class="fa fa-question" aria-hidden="true" ></i>
+					</a></li>
+
+			</ul>
+		</div>
+		<div class="nav-right">
+			<div class="search-box">
+				<i class="fa fa-search" aria-hidden="true"></i>
+				<input type="text" placeholder=" search">
+			</div>
+			<div class="nav-user-icon online"><a><img src="img/hiba.png"></a><button id="drop"><i class="fas fa-caret-down"></i></button>
+				<div class="dropdown_menu">
+					<ul>
+						<li><a href="profile.html">Profile</a></li>
+                        <li><a href="registration.html">Logout</a></li>
+					</ul>
+				</div>
+				<script src="js/drop.js"></script>
+			</div>
+	</nav>
+
+    <div class="notes" id="app">
+         <div class="notes__sidebar">
+            <button class="notes__add" type="button">Add code</button>
+            <textarea class="notes__body">Enter Code here.... </textarea>
+        </div>
+        <div class="notes__preview">
+		
+            
+            
+			<div class="notes__list">
+			<div class="post11">
+				<div class="user-profile"><img src="img/inconnu.png">
+					<div>
+					<p>Amine</p>
+					<small>#033110
+					</small>
+					</div>
+				</div>
+				<p>Here's a code to print the list at the end<br>
+						<br><br>
+
+						#c_programming
+					</p>
+                <div class="notes__list-item notes__list-item--selected">
+                    <div class="notes__small-title"><textarea>cellule * insert_Queue(cellule *L,float x)
+{
+    cellule * nouv=NULL, *p=NULL;
+    nouv=(cellule *)malloc(1*sizeof(cellule));
+    nouv->val=x;
+    nouv->suiv=NULL;
+    if(L==NULL)
+    {
+        L=nouv;
+    }
+    else
+    {
+        for(p=L; p->suiv!=NULL; p=p->suiv);
+        p->suiv=nouv;
+
+    }
+
+    return L;
+}
+						</textarea>
+						</div>
+						    <div class="date"="notes">Thursday 3:30pm</div>
+
+            </div>  
+			<hr>
+			<div class="post11">
+				<div class="user-profile"><img src="img/hiba.png">
+					<div>
+					<p>Hiba</p>
+					<small>#033110
+					</small>
+					</div>
+				</div>
+				<p>Here's a code to insert elements in a list in order.<br>
+						<br><br>
+
+						#c_programming
+					</p>
+                <div class="notes__list-item notes__list-item--selected">
+                    <div class="notes__small-title"><textarea>cellule * insert_ordre(cellule *L,float x)
+{
+    cellule * nouv=NULL, *AP=NULL, *AV=NULL;
+    nouv=(cellule *)malloc(1*sizeof(cellule));
+    nouv->val=x;
+    nouv->suiv=NULL;
+    AV=L;
+    AP=L;
+    if ( (L==NULL))
+    {
+        nouv->suiv=L;
+        L=nouv;
+    }
+    else
+    {
+        if (nouv->val<=L->val)
+        {
+            nouv->suiv=L;
+            L=nouv;
+        }
+        else
+        {
+            while (AP!=NULL && nouv->val > AP->val)
+            {
+                AV=AP;
+                AP=AP->suiv;
+            }
+            AV->suiv=nouv;
+            nouv->suiv=AP;
+        }
+    }
+    return L;
+}
+						</textarea>
+						</div>
+            </div> 
+                    <div class="date1"="notes">Monday 11:00AM</div>
+                </div>
+            </div>
+        </div> 
+	</div>
+	</div>
+	
+    <script src="./js/main.js" type="module"></script>
+	
+	
+</body>
+</html>

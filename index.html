@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CREANA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shorcut icon" href="img/icon.png">
+	
+	<!--description.........-------------------------->
+	<meta name="description" content="where coders meet!">
+	<meta name="keywords" content="code,coders,programme,programmation,meet new people">
+	<meta name="author" content="HIBA & AMMAR">
+<!--stylesheets................................-->
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+	crossorigin="anonymous"/>
+	 
+	
+</head>
+<body>
+	<!--navbar........................---------------------->
+	<nav id="navbar">
+		<div class="nav-left">
+			<a href="index.html" ><img src="img/icon1.png"class="logo"></a> 
+			<ul class="nav-list">
+				<li class=nav-item><div >
+					<a href="index.html">
+
+					<i class="fa fa-home active" aria-hidden="true"></i>
+					</a></div>
+
+				</li>
+				<li class=nav-item><a href="codes.html">
+					<i class="fa fa-code" aria-hidden="true"></i>
+					</a></li>
+				<li class=nav-item><a href="messaging.html">
+					<i class="fa fa-comments" aria-hidden="true"></i>
+					</a></li>
+				<li class=nav-item><a href="Q&A.html">
+					<i class="fa fa-question" aria-hidden="true" ></i>
+					</a></li>
+
+			</ul>
+		</div>
+		<div class="nav-right">
+			<div class="search-box">
+				<i class="fa fa-search" aria-hidden="true"></i>
+				<input type="text" placeholder=" search">
+			</div>
+			<div class="nav-user-icon online"><a href="profile.html"><img src="img/hiba.png"></a><button id="drop"><i class="fas fa-caret-down"></i></button>
+				<div class="dropdown_menu">
+					<ul>
+						<li><a href="profile.html">Profile</a></li>
+                        <li><a href="registration.html">Logout</a></li>
+					</ul>
+				</div>
+				<script src="js/drop.js"></script>
+			</div>
+	</nav>
+	<script>
+	// When the user scrolls the page, execute myFunction
+		window.onscroll = function() {myFunction()};
+		
+		// Get the navbar
+		var navbar = document.getElementById("navbar");
+		
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop;
+		
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}</script>
+    <div class="box">
+		
+		<!--left sidebar-------------------------------------------->
+		<div id="left" class="left-sidebar">
+			<h1>TOPICS</h1>
+			<div class="imp-links">
+                <ul>
+                    <li>
+                        <a href="https://stackoverflow.com/questions/tagged/javascript">javascript</a>
+                    </li>
+					<li>
+                        <a href="https://stackoverflow.com/questions/tagged/python">python</a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/search?q=data+analysis">DATA Analysis    </a>
+                    </li>
+					<li>
+                        <a href="https://stackoverflow.com/questions/tagged/c++">C++</a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/questions/tagged/bash">Bash command shell </a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/questions/tagged/android">Android</a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/questions/tagged/reactjs">React  </a>
+                    </li>
+                </ul>
+                <div class="see-more">
+                    <a href="https://stackoverflow.com/tags">see more</a>
+                </div>
+			</div>
+			<div class="left-side02">
+				<div class="saved-event-title">
+					<h4>Events</h4>
+					<a href="#">See all</a>
+				</div>
+				<div class="event">
+					<div class="left-event">
+						<h2>15</h2>
+						<span>December</span>
+					</div>
+					<div class="right-event">
+						<h3><i class="fa fa-map-marker" aria-hidden="true"></i>GDC developpers</h3>
+						<p>virtual hackathon</p>
+						<a href="#">more info</a>		
+					</div>
+					
+				</div>
+				<div class="event">
+					<div class="left-event">
+						<h2>20</h2>
+						<span>october</span>
+					</div>
+					<div class="right-event">
+						<h3><i class="fa fa-map-marker" aria-hidden="true"></i>ENSAM</h3>
+						<p>IA competition</p>
+						<a href="#">more info</a>		
+					</div>
+					
+				</div>
+				<div class="event">
+					<div class="left-event">
+						<h2>30</h2>
+						<span>october</span>
+					</div>
+					<div class="right-event">
+						<h3><i class="fa fa-map-marker" aria-hidden="true"></i>capgemini</h3>
+						<p>recruting</p>
+						<a href="#">more info</a>		
+					</div>
+					
+				</div>
+			</div>
+		</div>
+			<!--------MIDDLE-------------------------------------------->
+		<div class="central">
+            <div class="post">
+                <div class="post-box">
+                    <input type="text" placeholder="code not running?">
+                    <div class="user-profile"><img src="img/hiba.png">
+						<div>
+						<p>Hiba</p>
+						<small>public<i class="fa fa-caret-down" aria-hidden="true"></i>
+						</small>
+						</div>
+					</div>
+                </div>
+                <div class="reaction">
+                    <ul>
+                        <li>
+                           <button> <a><i class="fa fa-cloud-download" aria-hidden="true"></i><p>Import codes</p>
+						   </a></button>
+                        </li>
+                        <li>
+							<button><a>
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i><p>Send</p>
+                            </a></button>
+                        </li>
+                        <li>
+                            <button><a>
+                                <i class="fa fa-external-link" aria-hidden="true"></i><p>External Link</p>
+                            </a></button>
+                        </li>
+                    </ul>
+                </div>
+        	</div>
+			<div class="post01">
+				<div class="user-profile"><img src="img/babyoda.jpg">
+					<div>
+					<p>Ali</p>
+					<small>ensam casa stud
+					</small>
+					</div>
+				</div>
+				<div class="postdetails">
+					<p>i made a new structure.<br>
+						what do you think i can add on it guys ?<br><br>
+						#c_programming
+					</p>
+					<textarea>typedef struct IAGI
+						{
+							char nom[30];
+							int num;
+							struct cell *suiv;
+						}IAGI;
+					
+					
+					IAGI * insert_Queue(IAGI *L,FILE *f,int num)
+					{
+					
+						IAGI *nouv=NULL,*P=L;
+						nouv=(IAGI*)malloc(sizeof(IAGI));
+						nouv->num=num;
+						nouv->suiv=L;
+						fscanf(f,"%s",nouv->nom);
+						if (L==NULL)
+						{
+					
+							nouv->suiv=nouv;
+							L=nouv;
+							return(L);
+						}
+						while (P->suiv!=L )
+						{
+							P=P->suiv;
+						}
+						P->suiv=nouv;
+						return(L);
+					
+					}
+						</textarea>
+
+				</div>
+			<div class="reaction">
+				<ul>
+					<li>
+						<button class="like-btn"><span id="icon"><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+						<span id="count">0</span><p>likes</p></button>
+					</li>
+					<li>
+					   <button><span id="icon"> <a>
+						<i class="fa fa-clipboard" aria-hidden="true"></i><p>copy</p>
+					</a></span></button>
+					</li>
+					<li>
+						<button><span id="icon"><a>
+							<i class="fa fa-share" aria-hidden="true"></i><p>share</p>
+						</a></span></button>
+					</li>
+				</ul>
+				<script src="js/like.js"></script>
+			</div>
+			<div class="comment">
+				<form>
+					<textarea name="comment" cols="30" rows="5" placeholder='Add a comment'></textarea>
+					<div class="btn-comment">
+						<input type="submit" value="comment">
+						<button id="clear">Cancel</button>
+					</div>
+				</form>
+				<script src="js/cmt.js"></script>
+			</div>
+			</div>
+	
+
+		
+		</div>
+			<!--------RIGHT SIDEBAR------------------------------------->
+		<div id="right" class="right-sidebar">
+				<h1>TRENDINGS</h1>
+				<ul>
+					<li>
+						<a href="https://developer-tech.com/news/2021/nov/17/huawei-student-developers-program-aims-to-nurture-the-next-generation-of-talent/" class="trend tr01">
+							<img src="img/DSC03006-scaled_330x245_crop_80.png" class="img-responsive"><p>Huawei Student Developers Program aims to nurture the next generation of talent</p>
+							<div class="trend-source developer-tech"><img src="img/developer-tech.png"><p>developer-tech</p></div>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.sciencedaily.com/releases/2021/11/211103140105.htm" class="trend tr02">
+							<img src="img/211103140105_1_540x360.jpg" class="img-responsive"><p>Securing data transfers with relativity</p>
+							<div class="trend-source sciencedaily"><img src="img/sciencedaily.png"><p>sciencedaily</p></div>
+						</a>
+					</li>
+					<li>
+						<a href="https://screenrant.com/battlefield-2042-steam-reviews-mostly-negative/" class="trend tr03">
+							<img src="img/battlefield-2042-steam-worst-reviewed-games-list.png" class="img-responsive"><p>Battlefield 2042 Already on Steam's All-Time Worst Reviewed Games List</p>
+							<div class="trend-source screenrant"><img src="img/screenrant.jpg"><p>screenrant</p></div>
+						</a>
+					</li>
+				</ul>
+		</div>
+	
+	</div>
+	<footer>
+		<p>Copyright © 2021 IAGI_CI1</p>
+	</footer>
+</body>
+</html>

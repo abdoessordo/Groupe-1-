@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CREANA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shorcut icon" href="img/icon.png">
+	
+	<!--description.........-------------------------->
+	<meta name="description" content="where coders meet!">
+	<meta name="keywords" content="code,coders,programme,programmation,meet new people">
+	<meta name="author" content="HIBA & AMMAR">
+<!--stylesheets................................-->
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+	crossorigin="anonymous"/>
+	 
+	
+</head>
+<body>
+	<!--navbar........................---------------------->
+	<nav id="navbar">
+		<div class="nav-left">
+			<a href="index.html" ><img src="img/icon1.png"class="logo"></a> 
+			<ul class="nav-list">
+				<li class=nav-item><div >
+					<a href="index.html">
+
+					<i class="fa fa-home active" aria-hidden="true"></i>
+					</a></div>
+
+				</li>
+				<li class=nav-item><a href="codes.html">
+					<i class="fa fa-code" aria-hidden="true"></i>
+					</a></li>
+				<li class=nav-item><a href="messaging.html">
+					<i class="fa fa-comments" aria-hidden="true"></i>
+					</a></li>
+				<li class=nav-item><a href="Q&A.html">
+					<i class="fa fa-question" aria-hidden="true" ></i>
+					</a></li>
+
+			</ul>
+		</div>
+		<div class="nav-right">
+			<div class="search-box">
+				<i class="fa fa-search" aria-hidden="true"></i>
+				<input type="text" placeholder=" search">
+			</div>
+			<div class="nav-user-icon online"><a href="profile.html"><img src="img/hiba.png"></a><button id="drop"><i class="fas fa-caret-down"></i></button>
+				<div class="dropdown_menu">
+					<ul>
+						<li><a href="profile.html">Profile</a></li>
+                        <li><a href="registration.html">Logout</a></li>
+					</ul>
+				</div>
+				<script src="js/drop.js"></script>
+			</div>
+	</nav>
+	<script>
+	// When the user scrolls the page, execute myFunction
+		window.onscroll = function() {myFunction()};
+		
+		// Get the navbar
+		var navbar = document.getElementById("navbar");
+		
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop;
+		
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}</script>
+    <div class="box">
+		
+		    <!--left sidebar-------------------------------------------->
+		<div id="left-p" class="left-sidebar-p">
+           <div class="profile"><img src="img/hiba.png"><h1> Hiba#033110</h1></div>
+           <div class="imp-links-p">
+            <ul>
+                <li>
+                    <a href="#">Security & Privacy</a>
+                </li>
+                <li>
+                    <a href="#">History</a>
+                </li>
+                <li>
+                    <a href="#">My posts</a>
+                </li>
+                <li>
+                    <a href="#">Following</a>
+                </li>
+                <li>
+                    <a href="#">Project & Interests</a>
+                </li>
+                
+            </ul>
+            <div class="see-more">
+                <a href="#">see more</a>
+            </div>
+        </div>
+		</div>
+			<!--------MIDDLE-------------------------------------------->
+		<div class="central-p">
+            <div class="post">
+                <div class="post-box">
+                    <input type="text" placeholder="code not running?">
+                    <div class="user-profile"><img src="img/hiba.png">
+						<div>
+						<p>Hiba</p>
+						<small>public<i class="fa fa-caret-down" aria-hidden="true"></i>
+						</small>
+						</div>
+					</div>
+                </div>
+                <div class="reaction">
+                    <ul>
+                        <li>
+                           <button> <a><i class="fa fa-cloud-download" aria-hidden="true"></i><p>Import codes</p>
+						   </a></button>
+                        </li>
+                        <li>
+							<button><a>
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i><p>Send</p>
+                            </a></button>
+                        </li>
+                        <li>
+                            <button><a>
+                                <i class="fa fa-external-link" aria-hidden="true"></i><p>External Link</p>
+                            </a></button>
+                        </li>
+                    </ul>
+                </div>
+        	</div>
+            <div class="post01">
+				<div class="user-profile"><img src="img/hiba.png">
+					<div>
+					<p>Hiba</p>
+					<small>ensam casa stud
+					</small>
+					</div>
+				</div>
+				<div class="postdetails">
+					<p>I can't bring this code to print the list at the end.<br>
+						some help please!<br><br>
+
+						#c_programming#needhelp!
+					</p>
+					<textarea>#include"fct_liste.h"
+
+						int main()
+						{
+							liste *T=NULL;
+							T=cr_li_vide();
+							printf("la taille = %d\n",T->nbr);
+							if(l_isempty(T)==0)
+							{
+								printf("la liste est non vide\n");
+							}
+							else
+							{
+								printf("la liste est vide\n");
+							}
+							emfiler(T,1);
+							emfiler(T,2);
+							emfiler(T,3);
+							printf("******affichage de la liste\n");
+							affiche(*T);
+						
+							printf("******le nombre des elements de la liste=%d\n",T->nbr);
+							ajout_T(T,4);
+							ajout_T(T,5);
+							ajout_T(T,6);
+							printf("******2 eme affichage de la liste\n");
+							affiche(*T);
+							return 0;
+						}
+						</textarea>
+
+				</div>
+				<div class="reaction">
+                    <ul>
+                        <li>
+							<button class="like-btn"><span id="icon"><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+							<span id="count">0</span><p>likes</p></button>
+                        </li>
+                        <li>
+                           <button><span id="icon"> <a>
+							<i class="fa fa-clipboard" aria-hidden="true"></i><p>copy</p>
+						</a></span></button>
+                        </li>
+						<li>
+                            <button><span id="icon"><a>
+								<i class="fa fa-share" aria-hidden="true"></i><p>share</p>
+                            </a></span></button>
+                        </li>
+                    </ul>
+					<script src="js/like.js"></script>
+                </div>
+				<div class="comment">
+					<form>
+						<textarea name="comment" cols="30" rows="5" placeholder='Add a comment'></textarea>
+						<div class="btn-comment">
+							<input type="submit" value="comment">
+							<button id="clear">Cancel</button>
+						</div>
+					</form>
+					<script src="js/cmt.js"></script>
+				</div>
+
+			</div>
+		</div>
+			<!--------RIGHT SIDEBAR------------------------------------->	
+	</div>
+	<footer>
+		<p>Copyright © 2021 IAGI_CI1</p>
+	</footer>
+</body>
+</html>
