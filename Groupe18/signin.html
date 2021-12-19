@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewpoint" content="width=device-width , initial-scale=1.0">
+       <title>Sign In ConverseHigh</title>
+       <style type="text/css">
+         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+         /*the padding we set can add extra width to the boxes*/
+         *{
+            box-sizing: border-box;
+         }
+         body{
+          font-family: "Roboto",sans-serif;
+          font-weight: 300;
+          background-color: #333;
+          color: white;
+          overflow: hidden;
+         }
+         #logoimg{
+          height: 90px;
+          width: 170px;
+         }
+          #thewholething{
+            display: flex;
+            flex-direction: row; 
+          }
+          #LEFT{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+          }
+          #LOGO{
+            display: inline-flex;
+            margin-bottom: 8vh;
+          }
+          #RIGHT{
+            flex: 1;
+          }
+          /*sign in zone*/
+          #SIGNIN{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            padding-bottom: 1rem;
+          }
+          /*1rem=16px*/
+          #SIGNIN form{
+            width: 80%;
+            padding-bottom: 3rem;
+          }
+          #SIGNIN label{
+            font-size: 0.9rem;
+            line-height: 2rem;
+            font-weight: 500;
+          }
+          #SIGNIN .EMAIL{
+            margin-bottom: 1rem;
+            width: 100%;
+            border-radius: 4px;
+            background-color: #181818;
+            border: 2px solid skyblue;
+            color: #ccc;
+            padding: 0.5rem 1rem;
+            line-height: 1rem;
+          }
+
+           .firstbutton{
+            line-height: 1rem;
+            width: 100%;
+            padding: 0.6rem 0.5rem;
+            display: block;
+            border: 0px;
+            font-weight: 500;
+            border-radius:4px;
+            color:white;
+            background-color: skyblue;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.5s;
+            margin-top: 1rem;
+            }
+            .firstbutton:hover{
+              background-color: #ff7b39 ;
+            }
+
+           .secondbutton{
+            line-height: 1rem;
+            border: 2px solid gray; 
+            padding: 0.3rem 0.7rem;
+            display: block;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border-radius:4px;
+            color:white;
+            background: none;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.5s;
+
+            }
+            .secondbutton:hover{
+              border-color: #ff7b39 ;
+              color: #ff7b39;
+            }
+            #SIGNIN .secondbutton,
+            .or,
+            .links{
+              width: 60%;
+            }
+            #SIGNIN .links a{
+              display: block;
+              color: white;
+              text-decoration: none;
+              margin-bottom: 0.7rem;
+              margin-top:-16px; 
+              text-align: center;
+              font-size: 0.9rem;
+
+            }
+           #SIGNIN  .or{
+              display: flex;
+              flex-direction: row;
+              margin-bottom: 1.2rem;
+              text-align: center;
+            }
+            hr{
+              flex:auto;
+              background: white;
+              border:none; 
+              height: 1px;
+            }
+            /*for the space between OR and the bars we shall adress the span (it's whta contains the text)*/
+            .or span{
+              margin-right: 10px;
+              margin-left: 10px;
+            }
+            #mainfooter{
+              color: white;
+              text-align: center;
+              font-size:0.8rem; 
+              max-width: 80%;
+              padding-top: 4rem;
+            }
+            #mainfooter a{
+              text-decoration: underline;
+              color: skyblue;
+              margin: 0 3px;
+            }
+          /*to the left side yaaay*/
+          #display{
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            background: url('BG2.png') no-repeat center center / cover ; 
+            height: 100vh; /*viewport height */
+          }
+          #display .displaycontent{
+            font-size:2rem;
+            width: 100%;
+            color: white;
+            margin-bottom: 1.5rem;
+          }
+          #display .secondbutton{
+            width: 60%;
+            margin: auto;
+            transition: all 0.5s;
+            font-weight: 600;
+            color: white;
+            border: 1px solid gray;
+          }
+          #display .secondbutton:hover{
+            color: skyblue;
+            border-color: #ff7b39 ;
+          }
+          /*the media shit is for the automatic display of the screen; When the frame is larger than 1200 we give the sign in zone 40% of the screen*/
+          @media(min-width: 1200px){
+            #LEFT {
+              flex:4;
+           }
+            #RIGHT{
+              flex:6;
+            }
+          }
+          @media(max-width: 768px){
+              body {
+                overflow: auto;
+              }
+              #RIGHT{
+                display: none;
+              }
+              #LEFT{
+                justify-content: start;
+                margin-top: 2vh;
+              }
+              #SIGNIN .LOGO{
+                
+                margin-bottom: : 2vh;
+              }
+          }
+          
+
+       </style>
+</head>
+<body>
+  <div id="thewholething"> 
+      <div id="LEFT">
+        <div id="SIGNIN">
+          <div id="LOGO">
+            <img id="logoimg" src="simy2.png">
+          </div>
+          <form>
+            <div>
+              <label>Email or username</label>
+              <input type="text" class="EMAIL"> 
+            </div>
+            <div>
+              <label>Password</label>
+              <input type="Password" class="EMAIL"> 
+            </div>
+            <button type="submit" class="firstbutton">Sign in</button>
+          </form>
+          <div class="links">
+            <a href="#">Forgot Password</a>
+          </div>
+          <div class="or">
+            <hr class="bar">
+            <span>OR</span>
+            <hr class="bar">
+          </div>
+            <a href="#" class="secondbutton">Creat an acount</a>
+          </div>
+          <footer id="mainfooter">
+            <p>Copyright &copy;2021, SIMY all rights Reserved</p>
+            <div>
+              <a href="#">Terms of use</a> | <a href="#">Privacy Policy</a>
+            </div>
+          </footer>
+      </div>
+      <div id="RIGHT">
+        <div id="display">
+          <div class="displaycontent">
+            <h1>For weekly points and discounts</h1>
+            <a href="#" class="secondbutton">Recieve our news per email</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
+
+
