@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: whitesmoke;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 10px;
+}
+/* le styling de la barre de navigation. */
+nav {
+  background-color: #ffffff;
+  width: 100%;
+  border: 1px solid #efefef;
+  align-items: center;
+  height: 70px;
+  display: flex;
+  font-family: DettolSans-SemiBold, sans-serif;
+}
+nav::after {
+  content: "";
+  width: 10px;
+  height: 70px;
+  background-color: #24262b;
+}
+.logo {
+  width: 30%;
+  align-items: center;
+  margin: 1px;
+}
+.logo img {
+  width: 60%;
+  margin: auto 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  //border:2px solid #24262b;
+  //border-radius: 40%;
+}
+.p {
+  width: 70%;
+  align-items: center;
+  margin: 1px;
+}
+.p .fa {
+  margin-right: 8px;
+}
+.p ul {
+  list-style: none;
+  display: flex;
+}
+.p ul li {
+  padding-right: 25px;
+  width: 17%;
+  text-align: center;
+}
+.p ul li a {
+  text-decoration: none;
+  color: #24262b;
+  font-size: 18px;
+}
+.p ul li a:hover {
+  color: #f44336;
+}
+
+.menu {
+  display: none;
+}
+
+.p ul li:hover .menu {
+  height: 250px;
+  display: block;
+  width: 220px;
+  padding-top: 30px;
+  margin-left: 0;
+  background-color: #ffffff;
+  position: absolute;
+}
+.p ul li:hover .menu ul {
+  padding: 15px;
+  margin: 0;
+  display: inline-block;
+}
+.p ul li:hover .menu ul li {
+  padding: 25px 5px 25px 5px;
+  width: 100%;
+  border-bottom: 1px black solid;
+}
+.menu1 {
+  display: none;
+}
+.p ul li:hover .menu1 {
+  height: 140px;
+  display: block;
+  width: 150px;
+  padding-top: 30px;
+  margin-left: 0;
+  background-color: #ffffff;
+  position: absolute;
+}
+.p ul li:hover .menu1 ul {
+  padding: 8px;
+  margin: 0;
+  display: inline-block;
+}
+.p ul li:hover .menu1 ul li {
+  padding: 15px 3px 15px 3px;
+  width: 100%;
+  border-bottom: 1px black solid;
+}
+.menu .fa {
+  margin-right: 8px;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu ul li {
+  padding-right: 25px;
+  width: 17%;
+  text-align: center;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #24262b;
+  font-size: 18px;
+}
+.menu ul li a:hover {
+  color: #f44336;
+}
+
+.menu ul li:hover .menu {
+  height: 250px;
+  display: block;
+  width: 220px;
+  padding-top: 30px;
+  margin-left: 0;
+  background-color: #ffffff;
+  position: absolute;
+}
+.menu ul li:hover .menu ul {
+  padding: 15px;
+  margin: 0;
+  display: inline-block;
+}
+.menu ul li:hover .menu ul li {
+  padding: 25px 5px 25px 5px;
+  width: 100%;
+  border-bottom: 1px black solid;
+}
+.menu ul li a .icon {
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+}
+footer{
+ background-color:#24262b;
+ display:flex;
+ padding-top:30px;
+ margin-top: 40px;
+ height:150px;
+ border-radius: 1px;
+}
+.bas{
+  width:25%;
+  padding:0px 10px;
+  line-height: 1.5;
+  font-family:'poppins' ,sans-serif;
+  margin-left:20px;
+}
+.bas ul{
+  list-style:none;  
+}
+.bas ul li:not(:last-child){
+  margin-bottom:5px;
+
+}
+.bas ul li a{
+  text-decoration: none;
+  font-size:15px;
+  color: #bbbbbb;
+  transition:all 0.3s ease;
+}
+.bas h4{
+  color:#fff;
+  font-size:18px;
+  padding-bottom:2px;
+  text-transform: capitalize; 
+  position: relative;
+}
+.bas h4::before{
+  content:"";
+  height:2px; 
+  position: absolute;
+  background: #f44336;
+  width:50px;
+  bottom:4px;
+  left:3px;
+  box-sizing: border-box;
+}
+.bas ul li a{
+  color:#efefef;
+  opacity: 0.6;
+  padding-top:13px;
+}
+.bas ul li a:hover{
+  padding-left:10px;
+  color:#fff;
+  opacity:1;
+  }
+  .bas .icon{
+    padding-top:10px;
+  }
+  .bas .icon a{
+    display: inline-block;
+    background-color:rgb(255,255,255,0.2);
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    text-align:center;
+    line-height:40px;
+    color:#fff;
+    transition:all 0.3s ease;
+  }
+  .bas .icon a:hover{
+    background-color:white;
+    color:#24262b;
+  }

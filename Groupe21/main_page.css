@@ -1,0 +1,373 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+  background-color:#efefef;
+}
+nav{
+   background-color:#ffffff;
+   width:100%;
+   border:1px solid #efefef;
+   align-items: center;
+   height: 70px;
+   display:flex;
+   font-family: DettolSans-SemiBold,sans-serif;
+ }
+nav::after {
+   content:"";
+  width:10px;
+  height:70px;
+  background-color:#24262b;
+}
+.logo{
+	width:30%;
+    align-items:center;
+    margin:1px;
+}
+.logo img{
+	width:60%;
+	margin:auto 30px;
+	padding-left:5px;
+	padding-right:5px;
+	//border:2px solid #24262b;
+	//border-radius: 40%;
+}
+.p{
+	width:70%;
+    align-items: center;
+    margin:1px;
+}
+.p .fa{
+  margin-right: 8px;
+}
+.p ul{
+	list-style:none;
+	display:flex;
+}
+.p ul li{
+	padding-right:25px;
+	width:17%;
+	text-align:center;
+}
+.p ul li a{
+	text-decoration: none;
+	color:#24262b;
+  font-size: 18px;
+}
+ .p ul li a:hover {
+  color:#f44336 ;
+}
+
+.menu {
+	display:none;
+}
+
+.p ul li:hover .menu{
+	height:250px;
+	display:block;
+	width:220px;
+	padding-top:30px;
+	margin-left:0;
+    background-color:#ffffff;
+    position:absolute;
+}
+.p ul li:hover .menu ul{
+   padding:15px;
+   margin:0;
+   display:inline-block;
+}
+.p ul li:hover .menu ul li {
+    padding:25px 5px 25px 5px;
+    width:100%;
+    border-bottom: 1px black solid;
+}
+.menu1 {
+  display:none;
+}
+.p ul li:hover .menu1{
+  height:140px;
+  display:block;
+  width:150px;
+  padding-top:30px;
+  margin-left:0;
+  background-color:#ffffff;
+  position:absolute;
+}
+.p ul li:hover .menu1 ul{
+   padding:8px;
+   margin:0;
+   display:inline-block;
+}
+.p ul li:hover .menu1 ul li {
+    padding:15px 3px 15px 3px;
+    width:100%;
+    border-bottom: 1px black solid;
+}
+
+.content{
+	display:flex;
+	 width:90%;
+	 margin:1px 130px ;
+}
+.section{
+	width:300px;
+	height:340px;
+	display:inline-block;
+	border-radius:10px;
+	padding:20px 25px;
+	box-sizing:border-box;
+	cursor: pointer;
+	margin:20px 30px;
+	background-color:white;
+	transition: transform 0.5s;
+	 box-shadow: 6px 8px #f44336;
+	 opacity: 0.8;
+	position: relative;
+}
+.section:hover{
+	transform:translateY(-10px);
+	opacity: 1;
+}
+.box1{
+   background:url("box1.jpg") center no-repeat;
+    background-size:cover; 
+}
+.box1::after{
+	content:" VOITURE FAMILIALE ";
+	width:100%;
+	color:#24262b;
+	background-color:#efefef;
+	border-radius: 5px;
+    font-family: verdana;
+    font-size: 20px;
+    position: absolute;
+    top: -30px;
+    left:-3px;
+    right:0px;
+    text-align:center;
+    text-decoration: underline double 1px #24262b;
+}
+.box2{
+   background:url("box2.jpg") center no-repeat;
+    background-size:cover;
+}
+.box2::after{
+	content:" VOITURE MOYENNE ";
+	width:100%;
+	color:#24262b;
+	background-color:#efefef;
+	border-radius: 5px;
+    font-family: verdana;
+    font-size: 20px;
+    position: absolute;
+    top: -30px;
+    left:-3px;
+    right:0px;
+    text-align:center;
+    text-decoration: underline double 1px #24262b ;
+}
+.box3{
+   background:url("box3.jpg")center no-repeat;
+    background-size:cover;
+}
+.box3::after{
+	content:" VOITURE LUXE ";
+	width:100%;
+	color:#24262b;
+	background-color:#efefef;
+	border-radius: 5px;
+    font-family: verdana;
+    font-size: 20px;
+    position: absolute;
+    top: -30px;
+    left:-3px;
+    right:0px;
+    text-align:center;
+    text-decoration: underline double 1px #24262b;
+}
+.anime{
+	margin:2px auto 30px;
+	width:99%;
+	height:550px;
+    background:url("voiture2.jpg") no-repeat center;
+    background-size:cover;
+}
+.info{
+	width:100%;
+	margin:40px auto ;
+	height:100px;
+	display:flex;
+  overflow: hidden;
+  position: relative;
+ background: #fff;
+}
+
+.info img{
+	padding-left:60px;
+	padding-right:30px;
+}
+.h3{
+  text-align: center;
+  margin-top:10px;
+  padding-top:15px;
+}
+.b_right::after{
+  content:" ";
+    background: #24262b;
+  position:absolute;
+  width:0.1%;
+  height:300px;
+  left:670px;
+}
+.reviews{
+  display:flex;
+  align-items: center;
+}
+.commenter{
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  justify-content: center;
+
+  height:50vh;
+  margin-left:-7px;
+    padding-top:-20px;
+}
+.h3 h3{
+  font-size:30px;
+  width:50%;
+  text-decoration:underline double #24262b;
+}
+.h3{
+   display:flex;
+    margin-bottom:0px;
+}
+/*.h3::after{
+  content:' ';
+    background: linear-gradient(to right,#f44336,#9f4db5);
+  position:absolute;
+  width:80%;
+    height:3px;
+    bottom: -12px;
+    left:50%;
+   transform: translateX(-50%);
+}*/
+.box_c{
+  width:90%;
+  max-width:650px;
+  height:200px;
+  border-radius: 10px;
+  box-shadow: -5px 5px 15px rgb(0,0,0,0.5);
+  position:relative;
+    margin-top:0px;
+    color:#777;
+    box-sizing: border-box;
+}
+.card{
+   margin-top:25px;
+     color:#777;
+    line-height: 22px;
+    box-sizing: border-box;
+    margin-right:80px;
+    margin-left:10px;
+    text-align: justify;
+}
+.profil{
+  display:flex;
+  align-items: center;
+  margin:15px;
+     color:#24262b;
+}
+.profil img{
+    width:70px;
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-left:-7px;
+}
+.slid{
+  width:60px;
+  height:100%;
+  background:#24262b;
+  padding:15px 0;
+  box-sizing: border-box;
+  position: absolute;
+  border-top-right-radius: 5px;
+ border-bottom-right-radius: 5px;
+  top:0;
+  left:552px;
+}
+footer{
+ background-color:#24262b;
+ display:flex;
+ padding-top:30px;
+ margin-top: 40px;
+ height:150px;
+ border-radius: 1px;
+}
+.bas{
+	width:25%;
+	padding:0px 10px;
+	line-height: 1.5;
+	font-family:'poppins' ,sans-serif;
+	margin-left:20px;
+}
+.bas ul{
+	list-style:none;	
+}
+.bas ul li:not(:last-child){
+	margin-bottom:5px;
+
+}
+.bas ul li a{
+  text-decoration: none;
+  font-size:15px;
+  color: #bbbbbb;
+  transition:all 0.3s ease;
+}
+.bas h4{
+	color:#fff;
+	font-size:18px;
+	padding-bottom:2px;
+	text-transform: capitalize; 
+	position: relative;
+}
+.bas h4::before{
+	content:"";
+	height:2px; 
+	position: absolute;
+	background: #f44336;
+	width:50px;
+	bottom:4px;
+	left:3px;
+  box-sizing: border-box;
+}
+.bas ul li a{
+  color:#efefef;
+  opacity: 0.6;
+  padding-top:13px;
+}
+.bas ul li a:hover{
+  padding-left:10px;
+  color:#fff;
+  opacity:1;
+  }
+  .bas .icon{
+  	padding-top:10px;
+  }
+  .bas .icon a{
+  	display: inline-block;
+  	background-color:rgb(255,255,255,0.2);
+  	height:40px;
+  	width:40px;
+  	border-radius: 50%;
+    text-align:center;
+    line-height:40px;
+    color:#fff;
+    transition:all 0.3s ease;
+  }
+  .bas .icon a:hover{
+    background-color:white;
+    color:#24262b;
+  }

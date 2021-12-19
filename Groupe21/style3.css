@@ -1,0 +1,44 @@
+body{
+  background-image:url("");
+}
+.p1{
+  display:inline-block;
+}
+ .div1{
+  background: #333;
+   height:50px;
+   width:100%;
+
+ }
+
+.div1 ul {
+  list-style: none;
+   display: inline-flex;
+   color: white;
+
+}
+.div1 ul li {
+  
+  width:140px;
+  padding-right:15px;
+}
+
+ 
+ ul li a {
+  text-align: right;
+  color:white;
+  padding: 15px 16px;
+  text-decoration: none;
+
+}
+
+table {
+  height:100%;
+  width: 100%;
+}
+#p2{
+ 
+}
+span {
+  
+}
