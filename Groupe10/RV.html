@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendez-vous</title>
+    <link rel="stylesheet" type="text/css" href="css/style_index.css">
+    <link rel="stylesheet" href="css/biographie.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/rv.css"   >
+    <script src="/js/scrolling.js"></script>
+</head>
+    
+</head>
+<body>
+    <svg id="svg_header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="1" d="M0,96L48,106.7C96,117,192,139,288,144C384,149,480,139,576,117.3C672,96,768,64,864,85.3C960,107,1056,181,1152,208C1248,235,1344,213,1392,202.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <header style="position:fixed; width: 100%;">
+        <!-------------------------Navbar---------------------------->
+        <nav class="navbar navbar-expand-lg " style="background-color: #00cba9;">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item" >
+                    <a id="t" class="nav-link active nav_br text-white alert-link" aria-current="page" href="index.html" >Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active nav_br text-white" aria-current="page" href="biographie.html">Biographie</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active nav_br text-white" aria-current="page" href="spécialité.html">spécialité</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active nav_br text-white" aria-current="page" href="avis.html">Avis</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active nav_br text-white" aria-current="page" href="contact_us.html">Contact</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+      <!-------------------------/Navbar---------------------------->
+    </header>
+    <h3 class="temps" ><ion-icon name="watch-outline"></ion-icon> Notre temps de travail</h3><br>
+    
+    <section id="emploi" class="d-flex p-2" >
+      <!-- <legend   style="letter-spacing:3px; font-size:large;  font-style: oblique;" >Prenez votre <span style="font-weight: bold; color: aqua;">Rendez-vous</span> </legend> -->
+          <div class="container">
+    <table class=" table " style="margin-left: -70px;" >
+      <thead>
+        <tr>
+          <th scope="col"> </th>
+          <th scope="col">Jours</th>
+          <th scope="col">Matin</th>
+          <th scope="col">Après midi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">*</th>
+          <td>Lundi-Jeudi</td>
+          <td>09:00 - 13:00</td>
+          <td>14:00 - 18:00</td>
+        </tr>
+        <tr>
+          <th scope="row">*</th>
+          <td>Vendredi</td>
+          <td>09:00 - 12:30</td>
+          <td>15:00 - 18:00</td>
+        </tr>
+        <tr>
+          <th scope="row">*</th>
+          <td>Samedi</td>
+          <td>09:00 - 13:00</td>
+          <td>&nbsp; -------------&nbsp;</td>
+          <td>   </td>
+        </tr>
+      </tbody>
+    </table>
+    <article class="clock">
+      <div class="hours-container">
+        <div class="hours"></div>
+      </div>
+      <div class="minutes-container">
+        <div class="minutes"></div>
+      </div>
+      <div class="seconds-container">
+        <div class="seconds"></div>
+      </div>
+    </article>
+    </div>
+    <br>
+  
+    </section>
+
+<h3 class="rendezv" > Prenez Votre Rendez vous <span style="color: red;"> maintenant !</span></h3>
+    <!-----------------------------------------Formulaire-RDV--------------------------------------------------------->
+    <section id="apoitment" class="d-flex p-2" >
+    <!-- <legend   style="letter-spacing:3px; font-size:large;  font-style: oblique;" >Prenez votre <span style="font-weight: bold; color: aqua;">Rendez-vous</span> </legend> -->
+        <div class="container">
+            <form class="row g-3" style="float:left;" >
+                <div class="col-md-4">
+                  <label for="inputName" class="form-label">Nom et Prénom</label>
+                  <input type="text" class="form-control" id="inputName">
+                </div>
+                <div class="col-md-5">
+                  <label for="inputCIN" class="form-label">CIN</label>
+                  <input type="text" class="form-control" id="inputCIN">
+                </div>
+                
+                <div class="col-9">
+                  <label for="inputAddress" class="form-label">Adresse</label>
+                  <input type="text" class="form-control"  id="inputAddress" placeholder="">
+                </div>
+                <div style="display:flex; ">
+                <div class="col-md-4">
+                  <label for="inputDate" class="form-label">Date</label>
+                  <input type="date" class="form-control" id="inputDate">
+                </div>
+                <span style="padding:0 40px 0 6px;"></span>
+                <div class="col-md-4" >
+                  <label for="inputState" class="form-label">Horaire</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>9h-10h</option>
+                    <option>10h-11h</option>
+                    <option>11h-12h</option>
+                    <option>15h-16h</option>
+                    <option>16h-17h</option>
+                    <option>17h-18h</option>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+                <div> 
+                    <div >
+                    <div class="col-sm-10" style="display: flex; " >
+                      <input  style="margin-right: 10px;" type="radio" class=" btn-check" name="options" id="option1" autocomplete="off" checked>
+                      <label class="btn btn-secondary" for="option1">Première Visite</label>
+                      <!-- &nbsp;  --> <span style="padding:0 6px 0 6px;"></span>
+                      <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                      <label class="btn btn-secondary" for="option2">Rendez-vous</label>
+                    </div>
+                    </div>
+                      
+                </div>
+              
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+              </form>
+              <div class="image">
+                <img src="image/r_v.jpg" alt="rendez-vous" longdesc="rendez-vous chez Saiss"  height="400px" width="500px">
+              </div>
+        </div>
+    
+    </section><br><br>
+    <!-----------------------------------------/Formulaire-RDV--------------------------------------------------------->
+
+    <!-------------------------------------------------Footer--------------------------------------------------------->
+    <footer class="pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col footer_col">
+            <h3>Lieu:</h3><br><br>
+            <p class="footer_justify">150 Bd du Nil, Casablanca 20670</p>
+              <!------------------------------------------------Google_Maps-------------------------------------------------->
+              <div id="map-container-google-2" class="z-depth-1-half map-container " style="opacity: 0.8;">
+                  <iframe style="padding-left: 40px;" width="340px" height="140px" id="gmap_canvas" src="https://maps.google.com/maps?q=ensam%20casablanca&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </div>
+              <!------------------------------------------------/Google_Maps-------------------------------------------------->
+          </div>
+          <div class="col footer_col">
+            <h3>Heures d’ouverture:</h3>
+            <p class="footer_justify"><br><br> Du lundi au vendredi :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; De 9:00  à 13:00 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14:00 à 18:00<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samedi :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;De 9:00 à 13:00</p>
+          </div>
+          <div class="col footer_col">
+            <h3>Contact:</h3>
+            <p class="footer_justify"><br><br>+212 522 904 426 <br>+212 522 921 761</p><br><br><br>
+            <ul class="list-unstyled d-flex justify-content-around">
+              <li>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white;"> </i></a>
+              </li>
+              <br>
+              <li>
+                <a href="https://twitter.com/"><i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white;"> </i></a>
+              </li>
+              <br>
+              <li>
+                <a href="https://fr.linkedin.com/"><i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white;"> </i></a>
+              </li>
+              <br>
+              <li>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white;"> </i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/"><i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white;"> </i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr  >
+      <!-- Copyright -->
+      <div class=" text-center ">© 2021 Copyright  :
+        &nbsp;<a href="/">ENSAM-CASA </a>  &nbsp; By : Walid DAMOU & Ismail ESSAGAR
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-------------------------------------------------Footer--------------------------------------------------------->
+</body>
+</html>

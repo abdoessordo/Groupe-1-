@@ -1,0 +1,67 @@
+.cmnt{
+    
+    border: 2px solid black;
+    border-radius: 10px;
+    border-color: aliceblue;
+    padding: 2%;
+    margin: 10px;
+    position: relative;
+    background: linear-gradient(-45deg, rgb(165, 150, 150), rgb(178, 211, 209), gray, rgb(211, 204, 238));
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+i{
+    font-size: 20px;
+}
+.avis{
+    padding-top: 4%;
+}
+.btn-mod{
+    margin-top: 40%;
+    
+}
+#loadMore {
+
+padding-top: 20px;
+padding-bottom: 20px;
+
+}
+.cont
+{
+
+position: absolute;
+margin-top: 15%;
+width: 800px;
+padding: 10px 10px 5px 5px;
+transform: translate(25%,20%);
+background: #fff;
+box-sizing: border-box;
+border-radius: 10px;
+box-shadow: 0px 15px 50px rgba(0,0,0,.2);
+font-size: 20px;
+
+}
+
+.cercle
+{
+width: 200px;
+height: 200px;
+background: no-repeat url("../image/Dr._Raiss.jpg");
+background-size: 100% 100%;
+border-radius: 50%;
+float: left;
+
+}
