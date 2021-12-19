@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AMM</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="shortcut icon" href="img/Lmecha.png" type="image/x-icon" />
+</head>
+<body>
+	<!--home-->
+  <nav>
+      <div class="logo"><a href=""><img src="img/logos/mecha.png" alt=""></a></div>
+      <label for="btn" class="icona"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="btn">
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li>
+            <label for="btn-1" class="show">Products +</label>
+            <a href="#Products">Products</a>
+            <input type="checkbox" id="btn-1">
+        <ul>
+            <li><a href="#Products">Materials</a></li>
+            
+            <li><a href="clothes.html" target="blank">Clothes</a></li>
+        </ul></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#Contacts" >Contacts</a></li>
+    </ul>
+    
+  </nav>
+	<div class="slider" id="Home">
+		<div class="load"></div>
+		<div class="content">
+			<div class="principal">
+				<h1>A&M Mechatronics</h1>
+				<em>#Join The Revolution</em><br>
+				<em>#Be a Maker</em>
+			</div>
+		</div>
+	</div>
+	<!--About-->
+	
+	<div class="about" id="About">
+	  	<div id="particles-js"></div>
+	  	<embed src="https://www.youtube.com/embed/DAgOCX6DIf0"></embed>
+	  	<h1>About</h1>
+	  	<p>The A&M Mechatronics is a non-profit club created in 2014 by engineering students sharing the same passion for mechatronics, contributes since its foundation to ensure a panel of activities of high level technical characteristics. The club aims to develop knowledge through the formats of face-to-face and remote workshops, the realization of innovative technological projects to participate in national and international competitions. the club also organizes visits, meetings, conferences and webinars led by professionals and this in order to prepare our future engineers to integrate into a professional group. </p>
+	</div>
+	
+	<script src="particles.js"></script>
+	<script src="app.js"></script>
+
+	<!--Product-->
+
+	<section class="section promotion">
+	    <div class="title" id="Products">
+	        <h1>Our Products</h1>
+	        <h2>Shop collection</h2>
+	        <a href=""><span>Select from the premium product and save plenty money</span></a>
+	    </div>
+	    
+	    <div class="promotion-layout container">
+	        <div class="promotion-item">
+	          <img src="./img/others/board-removebg-preview.png" alt="A">
+	          <div class="promotion-content">
+	          <a href="cards.html" target="blank"><h3>Boards</h3></a>
+	        </div>
+	    </div>
+	  
+	    <div class="promotion-item">
+	          <img src="./img/others/sensors-removebg-preview.png" alt="B">
+	          <div class="promotion-content">
+	          <a href="sensors.html" target="blank"><h3>Sensors</h3></a>
+	          </div>
+        </div>
+	  
+        <div class="promotion-item">
+	        <img src="./img/others/afficheurs-removebg-preview.png" alt="C">
+	        <div class="promotion-content">
+	        <a href="motors.html" target="blank"><h3>Lcds</h3></a>   
+	        </div>
+        </div>
+	  
+        <div class="promotion-item">
+	          <img src="./img/others/motors-removebg-preview.png" alt="D">
+	          <div class="promotion-content">
+	          <a href="motors.html" target="blank"><h3>Motors</h3></a>
+	          </div>
+        </div>
+        <div class="promotion-item">
+	          <a href="kit.html" target="blank"><img src="./img/others/kit.png" alt="D"></a>
+	          <div class="promotion-content">
+	          <a href="kit.html" target="blank"><h3>kit</h3></a>
+	          </div>
+        </div>
+        <div class="promotion-item">
+	          <img src="./img/others/prd.png" alt="D">
+	          <div class="promotion-content">
+	          <a href="clothes.html" target="blank"><h3>Clothes</h3></a>
+	          </div>
+        </div>  
+		</div>
+	</section>
+
+	<!--footer-->
+	<footer class="footer-area" id="Contacts">
+        <div class="main">
+            <div class="footer">
+                <div class="single-footer">
+                    <h4 class="connections">Stay connected</h4>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/am.mechatronics/" target="blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://youtube.com/c/aemmechatronics"target="blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://instagram.com/aem.mechatronics?utm_medium=copy_link"target="blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/arts-et-m%C3%A9tiers-mechatronics-4825561ba"target="blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="form">
+                        <form action="">
+
+                        <label for="fname">First Name</label><br>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+        
+                        
+        
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+        
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" name="email" placeholder="Type your e-mail"><br>
+        
+                        
+        
+                        <label for="subject">Subject</label><br>
+                        <textarea id="subject" name="subject" placeholder="Write your message.." style="height:50px"></textarea><br>
+        
+                        <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="single-footer">
+                    <h4>main menu</h4>
+                    <ul>
+                        <li><a href="#Home"><i class="fas fa-chevron-right"></i> home</a></li>
+                        <li><a href="#About"><i class="fas fa-chevron-right"></i> about us</a></li>
+                        <li><a href="#Products"><i class="fas fa-chevron-right"></i> product</a></li>
+                        <li><a href="#Contacts"><i class="fas fa-chevron-right"></i> contact us</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>quick links</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> privacy policy</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> terms & conditions</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>contact us</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-map-marker-alt"></i> 150 Avenue Nile Sidi Othmane</a></li>
+                        <li><a href=""><i class="far fa-envelope"></i> aem.mechatronics@gmail.com</a></li>
+                        <li><a href=""><i class="fas fa-globe-europe"></i> aemmechatronics.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p>&copy; 2020 all rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
