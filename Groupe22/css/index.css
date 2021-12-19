@@ -1,0 +1,32 @@
+.jumbotron{
+	text-align:right;
+}
+.card{
+	margin:2%
+}
+.card-img-top{
+	z-index:1;
+}
+.d-block{
+	position:absolute;
+	left:50px;
+	right:50px;
+	top:300px;
+	z-index:0;
+}
+.card-img-top:hover{
+	opacity:0;
+}
+.dropdown-menu button,.dropdown-menu table{
+	margin:2%;
+}
+@media screen and (min-width: 992px){
+	.dropdown-menu table{
+		width:50vw;
+	}
+}
+@media screen and (max-width: 992px){
+	.dropdown-menu button{
+		width:96%;
+	}
+}

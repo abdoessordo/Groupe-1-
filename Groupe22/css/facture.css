@@ -1,0 +1,11 @@
+.jumbotron{
+	text-align:right;
+}
+div h2 {
+	background-color:white;
+}
+header + div{
+	height:400px;
+	margin:2%;
+	background-color:white;
+}

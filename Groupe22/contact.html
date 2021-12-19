@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Le magasin Van Gogh</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+	
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+	<link rel="stylesheet" href="css/contact.css"/>
+</head>
+
+<body class="bg-dark">   
+    <nav class="container-fluid sticky-top ">
+        <div class="navbar navbar-expand-lg bg-primary navbar-dark">           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+			<span class="navbar-brand">Le magasin Van Gogh</span>
+        </div>
+    </nav>
+	 <header class="container-fluid">		
+        <div class="jumbotron">
+		<h1 class="display-4">Pour nous contacter</h1>
+            <p class="text-muted">
+				Vous pouvez utiliser le formulaire ci-dessous
+            </p>
+        </div>
+    </header>
+	
+	<div class="container-fluid" id="formu">
+		<form id="selecteur" method="POST" action="index.html"> 
+		
+		</form>
+	</div>
+	<script type="text/babel">
+		function Reinitiliaser(){ 
+			document.getElementById("selecteur").reset();
+		}		
+		function Formulaire(){
+		const styleButton ={
+			margin:'2%'
+		}
+		const styleP ={
+			fontSize:'10px'
+		}
+		return ( 
+				<div>
+					<label htmlFor="prenom">Prénom: </label>
+					<input type="text" autofocus="autofocus" className="form-control" required="required" pattern="[a-zA-Z-]{3,15}" placeholder="Votre prénom"/><br/>
+					
+					<label htmlFor="nom">Nom: </label>
+					<input type="text" required="required" className="form-control" pattern="[a-zA-Z-]{3,25}" placeholder="Votre nom"/>
+					
+					<label htmlFor="email">Adresse courriel: </label><br/>
+					<input type="email" required="required" className="form-control" placeholder="someone@example.com"/>
+					<p style={styleP}>Votre adresse courriel ne sera pas divilguée</p>
+					
+					<label htmlFor="genre">Votre genre: </label>
+					<input type="radio" defaultChecked name="genre" value="Homme"/>
+					<label className="radio"  htmlFor="Homme">Homme</label>
+					<input type="radio" name="genre" value="Femme"/>
+					<label className="radio" htmlFor="Femme">Femme</label>
+					<input type="radio" name="genre" value="Autre"/>
+					<label className="radio" htmlFor="Autre">Autre</label><br/>
+					
+					<label htmlFor="age">Votre âge: </label><br/>
+					<input type="number" required="required" pattern="^(1[89]|[2-6][0-9]|7[0-7])$" className="form-control"/>
+					
+					<label htmlFor="revenu">Votre revenu familial: </label><br/>
+					<select className="form-control" defaultValue="choix3">
+						<option value="choix1">De 1$ à 24 999$</option>
+						<option value="choix2">De 25 000$ à 49 999$</option>
+						<option value="choix3">De 50 000$ à 69 999$</option>
+						<option value="choix4">De 70 000$ à 99 999$</option>
+						<option value="choix5">De 100 000$ à 499 999$</option>
+						<option value="choix6">500 000$ et plus</option>
+					</select>	
+					
+					<label htmlFor="message">Votre message :</label><br/>
+					<textarea name="message" required="required" rows="4" cols="208"></textarea><br/>
+
+					<button type="submit" style={styleButton} className="btn btn btn-warning cart-button"> <i className="fas fa-share-square"></i> Envoyer le message</button>
+					<button type="submit" style={styleButton} onClick={Reinitiliaser} className="btn btn btn-danger cart-button"> <i className="fas fa-sync"></i> Réinitiliaser le formulaire</button>
+				</div>
+					)
+				}
+			
+			ReactDOM.render(
+				<Formulaire/>,	
+				document.getElementById('selecteur')
+			);
+	</script>
+	<footer class="container-fluid footer my-4">
+        <div class="text-center bg-dark">
+            <span class="text-primary">&copy;2021 Aya Yamoune, ENSAM CASA</span>
+        </div>
+    </footer>
+	
+	</body>
+</html>
+	

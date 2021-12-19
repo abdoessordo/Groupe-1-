@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Le magasin Van Gogh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+	<!--...-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+   	<link rel="stylesheet" href="css/index.css"/>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+	
+ 	<script src = "js/index.js"></script> 
+</head>
+<!-- Portion Bootstrap -->
+<body class="bg-dark">   
+    <nav class="container-fluid sticky-top ">
+        <div class="navbar navbar-expand-lg bg-primary navbar-dark">           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">		
+
+                    </li>
+                </ul>
+            </div>
+			<span class="navbar-brand">Le magasin Van Gogh</span>
+        </div>
+    </nav>
+	
+    <header class="container-fluid">		
+        <div class="jumbotron">
+            <h1 class="display-4">Bienvenue dans le magasin de Vincent van Gogh!</h1>
+            <p class="lead">
+                Un hommage modeste à un artiste de grand talent.
+            </p>
+            <hr class="my-4" />
+            <p class="text-muted">
+                Ces reproductions sont d'une qualité exceptionnelle. 
+            </p>
+        </div>
+    </header>
+	
+	<template id="card">
+        <div class="card">
+            <div class="card-header"></div>
+            <img class="card-img-top" />
+            <div class="card-body d-flex">
+                <div class="d-block my-auto">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <form method="post">
+					<input type="number" name="quantity" value="0" min="1" />
+					<input type="submit" name="add" value="Ajouter au panier" class="btn btn-primary" /> 
+                </form>
+            </div>
+        </div>
+    </template>
+	
+    <main class="container-fluid mb-7">
+        <div class="card-deck"></div>
+    </main>
+	
+    <footer class="container-fluid footer my-4">
+        <div class="text-center bg-dark">
+            <span class="text-primary">&copy;2021 Aya Yamoune, ENSAM CASA</span>
+        </div>
+    </footer>
+	
+	<!-- Portion REACT -->	 
+    <script type="text/babel"> 
+		class CartHeader extends React.Component {
+			constructor(props) {
+				super(props);
+			}
+
+			render = () =>
+			
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Item</th>
+						<th>Quantité</th>
+						<th>Prix unitaire</th>
+						<th>Prix total</th>
+						<th></th>
+					</tr>
+				</thead>
+				;
+		}
+		class CartFooter extends React.Component {
+			constructor(props) {
+				super(props);
+				this.state = {amount: props.subtotal};
+			}
+
+			componentWillReceiveProps(nextProps) {
+				this.setState({
+					amount: nextProps.subtotal
+				});
+			}
+
+			render = () =>
+				<tfoot>
+					<tr>
+						<td></td>
+						<td>Sous-total:</td>
+						<td></td>
+						<td></td>
+						<td>{this.state.amount.toLocaleString(navigator.language, { minimumFractionDigits: 2 })}$</td>
+						<td></td>
+					</tr>
+				</tfoot>
+				;
+		}
+		class CartItem extends React.Component {
+			constructor(props) {
+				super(props);
+				this.state = {
+					id: props.id,
+					name: props.name,
+					qty: props.qty,
+					price: props.price.toLocaleString(navigator.language, { minimumFractionDigits: 2 }),
+					total: (props.qty*props.price).toLocaleString(navigator.language, { minimumFractionDigits: 2 })
+				};
+			}
+			handleClick(e, id) {
+				if (typeof this.props.onClick === 'function') {
+					this.props.onClick(e, id);
+				}
+			}
+
+			componentWillReceiveProps(nextProps) {
+				this.setState({
+					id: nextProps.id,
+					name: nextProps.name,
+					qty: nextProps.qty,
+					price: nextProps.price,
+					total: nextProps.qty*nextProps.price
+				});
+			}
+
+			render = () =>
+				<tr>
+					<td>{this.state.id}</td>
+					<td>{this.state.name}</td>
+					<td>{this.state.qty}</td>
+					<td>{this.state.price.toLocaleString(navigator.language, { minimumFractionDigits: 2 })}$</td>
+					<td>{this.state.total.toLocaleString(navigator.language, { minimumFractionDigits: 2 })}$</td>
+					<td>
+						<button type="button" className="far fa-trash-alt btn btn-sm btn-danger"></button>
+					</td>
+				</tr>
+				;
+		}
+		class Cart extends React.Component {
+			constructor(props) {
+				super(props); 
+				let savedState = localStorage.getItem("reactCartState");
+				if (savedState != undefined)
+					this.state = JSON.parse(savedState);
+				else
+					this.state = {nbItems: 0, subtotal: 0, childrens: []};
+				this.setState; 
+				this.removeSingleHandler = this.removeSingleHandler.bind(this); 
+				this.emptyCartHandler = this.emptyCartHandler.bind(this);
+				this.saveData = this.saveData.bind(this);
+			}
+			addItem(item) {  
+				this.state.subtotal = 0;
+				this.state.nbItems = 0;
+				for (let child of this.state.childrens){
+					if (item.id == child.id) {
+						child.qty = item.qty;
+						this.updateTotals();
+						return;
+					}
+				}
+				this.state.childrens.push(item);
+				this.updateTotals();
+			}
+
+			removeSingleHandler(id) { 
+				for (const index of this.state.childrens.keys()) {
+					if (id == this.state.childrens[index].id) {
+						this.state.childrens.splice(index, 1)
+						items[id - 1].qtyInCart = 0;
+						items[id - 1].saveQty();
+					}
+				}
+				this.updateTotals();
+			}
+			emptyCartHandler() { 
+				for (let item of items)
+					item.qtyInCart = 0;
+				this.setState({nbItems: 0, subtotal: 0, childrens: []}, this.saveData);
+			}
+			saveData() { 
+				localStorage.setItem("reactCartState", JSON.stringify(this.state));
+			}
+
+			updateTotals() { 
+				this.state.nbItems = 0;
+				this.state.subtotal = 0;
+				this.state.childrens.forEach((child) => {
+					this.state.nbItems += parseInt(child.qty);
+					this.state.subtotal += parseFloat(child.qty * child.price);
+				})
+				this.setState(this.state, this.saveData);
+			}
+			render = () =>  
+				<div>
+					<a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i className="fas fa-shopping-cart"></i>
+						<span id="cartNumber"> {this.state.nbItems}</span>
+					</a>
+					<div className="dropdown-menu" aria-labelledby="navbarDropdown">
+						<table>
+							<CartHeader/>
+								<tbody>
+									{this.state.childrens.map((item) => ( 
+										<CartItem
+											key={item.id}
+											id={item.id}
+											name={item.name}
+											qty={item.qty}
+											price={item.price}
+											onClick={this.removeSingleHandler}/> 
+									))}
+								</tbody>
+							<CartFooter subtotal={this.state.subtotal}/>
+						</table>
+						<div className="dropdown-divider"></div>
+						<div>
+							<button type="button" onClick={() => window.location.href = "paiement.html"} className="btn btn btn-warning cart-button"><i className="fas fa-hand-holding-usd"></i> Procéder au paiement</button>
+							<button type="button" onClick={this.emptyCartHandler} className="btn btn-danger cart-button"><i className="far fa-trash-alt"></i> Vider le panier</button>
+						</div>
+					</div>
+				</div>
+				;
+		}
+		
+		let cart = ReactDOM.render(
+			<Cart/>,
+			$('.navbar-collapse .dropdown')[0]
+		)
+	</script>
+</body>
+
+</html>
