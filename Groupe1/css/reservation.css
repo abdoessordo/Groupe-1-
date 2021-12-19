@@ -1,0 +1,284 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*------------------*/
+
+.MAIN_WRAPPER {
+    margin-top: 10vh;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.banner {
+    transform: translateX(-20px);
+    background-image: linear-gradient(to bottom, rgba(36, 132, 191, 0.3), rgba(4, 42, 93, 0.9)), url(../assets/terrain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% + 40px);
+    height: 100vh;
+    margin-top: -20vh;
+}
+
+.banner .banner_text {
+    padding-top: 40vh;
+    width: 40%;
+    color: white;
+    padding-left: 15vw;
+}
+
+.banner .banner_text h1 {
+    font-weight: 700;
+    padding-bottom: 5%;
+}
+
+.banner .banner_text h2 {
+    font-weight: 200;
+    padding-bottom: 5%;
+    word-spacing: 5px;
+    text-align: justify;
+}
+
+.banner a .btn {
+    background-color: #72adc3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 5vh;
+    box-shadow: 2px 2px 7px 0px rgb(0 0 0 / 20%);
+}
+
+/*-----------------------------*/
+
+.row-boxes {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+.row-boxes .box {
+    width: calc(70%/3);
+    height: 30vh;
+    margin-left: 2rem;
+}
+
+.row-boxes .box .box-head {
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid black;
+    height: 4rem;
+    width: 4rem;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+
+.row-boxes .box .text {
+    text-align: center;
+    transform: translateY(-8vh);
+}
+
+.row-boxes .box .text h4 {
+    font-weight: 900;
+}
+
+
+.row-boxes .box .text h5 {
+    padding: 0 10%;
+}
+
+#box1 {
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 6px dashed rgba(0, 0, 0, 0.1);
+}
+
+
+
+#box2 {
+    background-color: #042a5d;
+    border: 6px #042a5d dashed;
+    color: white;
+}
+
+#box2 .box-head {
+    border-radius: 0%;
+    border: 4px solid #042a5d;
+}
+
+#box3 {
+    border: 6px #042a5d dashed
+}
+
+#box3 .box-head {
+    border: 4px solid #042a5d;
+
+}
+
+#box3 .text {
+    transform: translateY(-8.5vh);
+}
+
+/*------------------------------*/
+
+.tous-les-jours {
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tous-les-jours .ico {
+    margin-right: 1rem;
+}
+
+.tous-les-jours .ico .fas {
+    font-size: 2.5rem;
+    color: #72adc3;
+}
+
+.tous-les-jours h3 {
+    font-size: 35px;
+    font-weight: 900;
+    color: #333333
+}
+
+.tous-les-jours h3 span {
+    color: #72adc3;
+}
+
+
+/*------------------------------*/
+
+.tarifs {
+    margin-top: 20vh;
+}
+
+.tarifs h1 {
+    text-align: center;
+    color: #333333;
+    font-weight: 900;
+}
+
+.tarifs .tableau {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.tarifs .tableau .col {
+    width: calc(90%/5);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarifs .tableau .tarif {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+.tarifs .tableau .col .text {
+    margin-bottom: 5vh;
+    margin-top: 8vh;
+
+}
+
+.tarifs .tableau .col .text h4,
+.tarifs .tableau .col .text h5 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.tarifs .tableau .col .text .greytitle,
+.tarifs .tableau .orange .text .price {
+    color: #72adc3;
+    font-size: 27px;
+}
+
+.tarifs .tableau .col .staduims {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarifs .tableau .col .staduims .terrain,
+.staduims .orange_stad,
+.staduims .terrain_grey {
+    font-size: 16px;
+    font-weight: 700;
+    height: calc(100%/4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarifs .tableau .col .staduims .terrain,
+.staduims .terrain_grey {
+    color: #747474;
+}
+
+
+.tarifs .tableau .orange,
+.text .orange {
+    background-color: #72acd3b2;
+    color: white;
+}
+
+.staduims .orange_stad {
+    background-color: #72acd3;
+    color: white;
+}
+
+.staduims .terrain_grey {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+
+.tarifs .tableau .col .staduims .white,
+.tarifs .tableau .orange .text .price {
+    color: white;
+}
+
+.staduims .reserve_btn,
+.staduims a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #72acd3;
+    color: white;
+    font-size: 16px;
+    height: 5vh;
+    border-radius: 2px;
+    width: 40%;
+}
+
+.staduims a {
+    margin: auto;
+}
