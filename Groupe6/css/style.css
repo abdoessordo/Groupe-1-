@@ -1,0 +1,537 @@
+/* Global Rules  */
+
+@import url(../css/bootstrap.css);
+body{
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+
+html { 
+    scroll-behavior: smooth;
+
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  
+        
+    
+}
+    
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .header .logo{
+        width: 100%;
+    }
+    .header .nav-bar > li {
+        width: 100%;
+        
+    }
+    
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+   
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+
+ }
+/* End Global Rules */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+
+
+/* Start Header */   
+                                                
+
+.Login{
+  position: relative       ;
+  float: right;
+  padding-right:30px ;
+  padding-top: 18px;
+}                                                
+.header {
+   
+    position: relative;
+    width: 1337px;
+    height: 65px;
+    left: 0px;
+    top: 0px;
+
+    background: #000000;
+    border-radius: 0px 0px 84px 19px;
+}
+
+.header .Container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.header .logo {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 22x;
+    height: 72px;
+    
+
+}
+
+.header .logo:hover{
+    color: yellow;
+}
+.header .nav-bar{
+    align-items: center;
+     display: flex;
+     position: relative;
+     right: 80px;
+
+}
+.header .nav-bar > li > a {
+    padding-right: 20px;
+    color: white ;
+
+    
+}
+
+.Langage {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+
+}
+.search_bar{
+    border-radius: 20px;
+}
+.search_bar:hover{
+    background-color: yellow;
+    transition-delay: 0.20s;
+    
+}
+
+
+                                                /* End Header */
+
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+
+
+/*  */
+
+/* .back1{
+    width: 100%;
+    height: 1024px;
+    padding-bottom: 278px ;
+    filter: blur(8px);
+} */
+
+
+/* Start Landing Page */
+
+.border {
+    position: absolute;
+    width: 534px;
+    height: 503px;
+    left: 113px;
+    top: 227px;
+    
+    background: #000000;
+    border-radius: 67px;
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    
+    
+}
+
+.Where_To{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+   
+}
+
+.From_To{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+#adress{
+    width: 366px;
+    height: 60px;
+    
+
+    background: #FFFFFF;
+    border-radius: 14px;
+}
+
+.recherch {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+
+}
+#search{
+    width: 152px;
+    height: 46px;
+    border-radius: 23px;
+    
+}
+#search:hover{
+    background-color: yellow;
+}
+
+
+/* START WHY PAGE  */
+
+.why_Page{
+    margin: 92px ;
+
+}
+.discover{
+  display: flex;
+  justify-content: center;
+}
+#Discover{
+  width: 146px;
+  height: 45px;
+  left: 550px;
+  top: 691px;
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.ta3rif{
+    font-size: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Why{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    margin-top: 73px;
+}
+
+.border1 {
+    width: 295px;
+    height: 461px;
+    left: 202px;
+    top: 283px;
+
+    background: #eee;
+    border: 1px solid #FFF500;
+    box-sizing: border-box;
+    border-radius: 70px;
+    display: grid;
+}
+
+
+.border2 {
+    width: 295px;
+    height: 461px;
+    left: 202px;
+    top: 283px;
+
+    background: #eee;
+    border: 1px solid #FFF500;
+    box-sizing: border-box;
+    border-radius: 70px;
+    display: grid;
+}
+
+.border3 {
+    width: 295px;
+    height: 461px;
+    left: 202px;
+    top: 283px;
+
+    background: #eee;
+    border: 1px solid #FFF500;
+    box-sizing: border-box;
+    border-radius: 70px;
+    display: grid;
+}
+
+
+
+
+
+
+
+
+
+/* END WHY PAGE  */
+
+
+
+/* Start Trifs Page */
+
+.Tarif_Page{
+  padding-left: 150px;
+}
+
+.Tarif_Container{
+  padding-top: 50px;
+  display: flex;
+
+}
+
+.col1{
+  display: grid;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 24px;
+  width: 300px;
+}
+
+#single #week #month{
+  padding-top: 33px;
+  padding-left: 25px ;
+}
+
+
+.col3{
+  display: flex;
+  flex-direction: column;
+    
+  align-content: space-between;
+  justify-content: space-evenly;
+}
+
+.Get_Buslik{
+  border-radius: 0px 66px 56px 7px;
+  width: 240px;
+  height: 50px ;
+
+}
+
+.info_Buslik{
+  border-radius: 0px 66px 56px 7px;
+  width: 240px;
+  height: 50px ;
+}
+
+
+
+
+
+
+
+
+
+/* End Trifs Page */
+/* Footer Page */
+.footer-dark {
+  padding:0 0;
+    color:#f0f9ff;
+    background-color:black;
+  }
+  
+  .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-dark .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+/* End Footer Page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END landing Page */

@@ -1,0 +1,90 @@
+hr{
+    border-top: 2px solid black;
+}
+li {
+    list-style: none;
+}
+.Logini{
+    margin: 93px;
+}
+.Login{
+    display:  none;
+}
+
+.My_Buslik_Account{
+display: flex;
+
+}
+
+.container1{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 56px;
+
+}
+.Login_account{
+
+}
+.Create_Accout{
+    
+}
+
+.Email{
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 337px;
+    height: 43px;
+    
+}
+
+.Password{
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 337px;
+    height: 43px;
+}
+.Login2{
+    display: flex;
+    justify-content: center;
+}
+.Login_Button2{
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 38px;
+    width: 220px;
+    height: 45px;
+    line-height: 1.2857em;
+    font-size: 16px !important;
+    font-family: 'ralewaysemibold', verdana, arial, sans-serif;
+}
+
+.Login_Button2:hover{
+    background-color: #1976D2;
+    transition-delay: 0.2s;
+    color: white;
+}
+
+.Create_Account{
+width: 337px;
+height: 43px;
+
+
+background: none;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 10px;
+line-height: 1.2857em;
+font-size: 16px !important;
+font-family: 'ralewaysemibold', verdana, arial, sans-serif;
+}
+
+.Create_Account:hover{
+    background-color: #1976D2;
+    transition-delay: 0.2s;
+    color: white;
+
+}
+
+

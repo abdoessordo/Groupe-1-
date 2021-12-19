@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusLik</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Our Css Style -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font owesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+   
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+    <!-- Header Section -->
+    <div class="Login"><img src="img/login.png" alt="" style="padding-right: 15px;"><a href="Login_Page.html" style="color: black; font-weight: bold;">My Account</a></div>
+      <div class="header" id="header">
+        
+        
+          <div class="Container">
+              <a href="#" class="logo">BusLik</a>
+              
+                  <ul class="nav-bar">
+                      <ul class="Langage">
+                          <li><a href="#" style="padding-right: 10px;"><img src="img/langage_vector.png" alt=""></a></li>
+                          <!-- Change Langage --><!-- Change Langage --><!-- Change Langage --><!-- Change Langage --><!-- Change Langage --><!-- Change Langage --><!-- Change Langage --><!-- Change Langage --><!-- Change Langage --><!-- Change Langage --><!-- Change Langage -->
+                          <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                  EN
+                            </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a href="#" class="dropdown-item">EN</a></li>
+                                <li><a href="#" class="dropdown-item">AR</a></li>
+                                <li><a href="#" class="dropdown-item">FR</a></li>
+                              </ul>
+                          </div>
+                          <!-- <li><a href="#" style="padding-left: 10px;"><img src="img/flesh_ta7t.png" alt=""></a></li> -->
+                      </ul>
+                      <li> <a href="index.html">Home</a></li>
+                      <li><a href="Get_Buslik_Ticket.html">Tarifs</a></li>
+                      <li><a href="Contact_Page.html">Contact Us</a></li>
+                      <li><a href="About_Buslik_US.html">About Us</a></li>
+                      <input class="search_bar" type="text" placeholder=" Search.." style="padding-right: 20px;">
+                      <li class="botton_search"><a href="#"><img src="img/search_vector.png" alt=""></a></li>
+                </ul>
+              </div>
+      </div>
+    <!-- ENd Header Section -->
+    <!-- <img src="img/back2.jpeg" alt="" class="Back"> -->
+
+
+    <!-- START LANDING PAGE -->
+
+    <div  class="landing">
+      <img src="img/back2.jpeg" class="back1" width="100%" height="800px" style="filter: blur(8px);">
+
+      <div class="border">
+          <div class="Where_To"><h1>WHERE TO ? </h1></div>
+          <div class="From_To">
+            <h6 style="color: beige;">from</h6>
+            <input id="adress" type="text" placeholder="Your adress,station,place..."> <button    onclick="getLocation()"><img src="img//maps.png" alt="" style="position: absolute;right: 48px;top: 35%;"></button>
+            <h6 style="color: beige;" >to</h6>
+            <input id="adress" type="text" placeholder="Destination adress,station,place...">
+          </div>
+          <div class="recherch">
+            <button id="search" >Search</button> 
+          </div>
+          
+      </div>
+
+    </div>
+
+    <!-- End Landing Page -->
+
+    <!-- Start Why Page -->
+    <div class="why_Page">
+      <div class="ta3rif">Why <span style="color: #FFF500;"> BusLik</span> ?</div>
+      <div class="Why">
+        <div class="border1">
+          <div style="display: flex;justify-content: center;"><img src="img/timinig.png" alt="" style="width: 126px;height: 144px;left: 277px;top: 352px;"></div>
+          <div style="width: 277px;height: 21px;left: 267px;top: 537px;font-family: Roboto;font-style: normal;font-weight: bold;font-size: 18px;line-height: 21px; display: flex;justify-content: center;"><div> Control Your Time</div></div>
+          <p style="padding-left: 24px; padding-right: 24px ;">Getting around better, more comfortable, safer, more accessible, more ecological, while staying connected with new services at your fingertips ... and ultimately <strong>saving time for yourself!</strong> </p>
+          
+          <div class="discover"><button id="Discover"><a href="Get_Buslik_Ticket.html" style="color: black;"> Dsicover</a></button></div>
+        </div>
+        <div class="border2">
+            <div style="display: flex;justify-content: center;" ><img src="img/tourist.png" alt="" style="width: 126px; height: 144px;"></div>
+            <div style="width: 277px;height: 21px;left: 267px;top: 537px;font-family: Roboto;font-style: normal;font-weight: bold;font-size: 18px;line-height: 21px; display: flex;justify-content: center;"><div>All Distination </div></div>
+            <p style="padding-left: 24px; padding-right: 24px;">A global vision of mobility is essential today to make life easier for travelers and to offer the best choice for getting around. This Why Buslik services</p>
+            <div class="pipline" style="width: 293px;height: 0px;"></div>
+            <div class="discover"><button id="Discover"><a href="Get_Buslik_Ticket.html" style="color: black;"> Dsicover</a></button></div>
+        </div>
+        <div class="border3">
+          <div style="display: flex;justify-content: center;" ><img src="img/cridit card.png" alt="" style="width: 126px; height: 144px;"></div>
+          <div style="width: 277px;height: 21px;left: 267px;top: 537px;font-family: Roboto;font-style: normal;font-weight: bold;font-size: 18px;line-height: 21px; display: flex;justify-content: center;"><div> different payment methods</div></div>
+          <p style="padding-left: 24px; padding-right: 24px;">Many contactless payment services are available for both regular and occasional travelers, to buy your tickets in advance or at the last second if you have no change...</p>
+          <div class="pipline"></div>
+          <div class="discover"><button id="Discover" ><a href="Get_Buslik_Ticket.html" style="color: black;"> Dsicover</a></button></div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- end Why Page -->
+
+
+<!-- Start Trifs Page -->
+
+      <div class="Tarif_Page" style="padding-bottom: 120px; padding-top: 35px;">
+        <div><h1>Tickets and fares</h1></div>
+        <div class="Tarif_Container">
+          <div class="col1">
+            <div style="padding-top: 33px;padding-left:25px ; position: relative;"><h4>Single Tickets</h4><p>Buy Single Tickets for single Trips</p>
+            <img src="img/flesh_lisr.png" alt="" style="position:absolute; top: 38%; right: 11px;"><div id="pipline"></div></div>
+            
+            <div style="padding-top: 33px;padding-left: 25px ; position: relative;"><h4>Weekly Tickets</h4><p>Buy  Tickets for 7 Days</p><img src="img/flesh_lisr.png" alt="" style="position:absolute; top: 38%; right: 11px;"></div>
+            <div style="padding-top: 33px;padding-left: 25px ; position: relative;"><h4>MontlyTickets</h4><p>Buy  Tickets for 30 Days </p><img src="img/flesh_lisr.png" alt="" style="position:absolute; top: 38%; right: 11px;"></div>
+           </div>
+         
+         
+          <div class="col2">
+            <img src="img/Tickets.png" alt="" style="width: 603px;height: 472px;left: 425px;top: 240px;filter: drop-shadow(10px 4px 7px rgba(0, 0, 0, 0.29));">
+          </div>
+          <div class="col3">
+
+            <div ><button class="Get_Buslik"><a href="Get_Buslik_Ticket.html"><span style="font-family: Roboto;font-style: normal;font-weight: bold;font-size: 14px;">Get your Buslik Tiket now</span> </a></button></div>
+            <div ><button class="info_Buslik" ><a href="soon_Page/Soon_Page.html"><span style="font-family: Roboto;font-style: normal;font-weight: bold;font-size: 13px;">About Buslik APP</span></a></button></div>
+          </div>
+          
+          
+          
+          
+          <div class="col3"></div>
+        </div>
+
+      </div>
+
+
+<!-- End Trifs Page -->
+
+
+
+    <!--Foter Page  -->
+    <div class="footer-dark">
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3>HOME</h3>
+                      <ul>
+                          <li><a href="index.html">Destinition</a></li>
+                          <li><a href="About_Buslik_US.html">Why Buslik</a></li>
+                          <li><a href="Get_Buslik_Ticket.html">Tickets and fares</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3>About</h3>
+                      <ul>
+                          <li><a href="Get_Buslik_Ticket.html">Tarifs</a></li>
+                          <li><a href="Get_Buslik_Ticket.html">Paiement Methods</a></li>
+                          <li><a href="Contact_Page.html">Contact Us</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 item text">
+                      <h3>BusLik Company</h3>
+                      <p>BusLik created for providing assistance in dealing with mobility problems in Morocco  </p>
+                  </div>
+                  
+              </div>
+              
+          </div>
+      </footer>
+  </div>
+  
+  </body>
+</html>
+<script>
+const x = document.getElementById("adress");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  var input = document.getElementById ("adress");
+  window.alert(  `Latitude: ${position.coords.latitude}  
+  Longitude:${position.coords.longitude}`)
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
+}
+
+</script>
