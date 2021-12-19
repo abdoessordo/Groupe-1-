@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styledash.css">
+	<title>ENSAM CASA - Ecole Nationale Supérieure d'Arts et Métiers</title>
+	<link rel="icon" href="images/academy.jpg"> <!--L'icône--> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@449&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body> 
+
+<!--------------------- side bar------------------>
+    <div class="sidebar">
+
+    	<!------- LOGO ENSAM CASA ACADEMY ----->
+
+		<div class="logo">
+			<img src="images/Ensam.png" class="logo">
+		</div>
+
+			<!------- Sidebar USER  ----->
+		<div class="user">
+			<div>
+				<img src="images/face4.jpg" alt="profile_picture" class="profile">
+				<div class="description">
+				<span class="name">User</span>
+			</div>
+		</div>
+    </div>
+
+	<!------- the elements of the Sidebar avec des dropdown menu ----->
+			
+    <div class="position-des-listes">
+
+		<div>
+			<button class="dropdown"> <i class="fas fa-home"></i> Tableau de bord </button>
+		</div>
+		
+		<button class="dropdown"> <i class="fas user1 fa-user-graduate"></i> Étudiants <i class="fa fa-caret-down"></i> </button>
+
+		<div class="dropdown-container">
+		  <a href="ListeEtudiants.html">Tous les étudiants</a>
+		  <a href="EtudiantsDemandeInscription.html">Demande d'inscription</a>
+		  <a href="StudentDemandeCertif.html">Demande de certif</a>
+		</div>
+
+		<button class="dropdown"> <i class="fas fa-graduation-cap"></i> Certifications <i class="fa fa-caret-down"></i> </button>
+
+		<div class="dropdown-container">
+		  <a href="EtudiantInfo.html">Mes certifications</a>
+		  <a href="InstructeurDemande.html">Demande de certif</a>
+		</div>
+
+		<button class="dropdown"> <i class="fas user2 fa-chalkboard-teacher"></i> Sessions <i class="fa fa-caret-down"></i> </button>
+
+		<div class="dropdown-container">
+		  <a href="ListeEtudiantsSession.html">Toutes les sessions <br></a>
+		  <a href="AjouterSession.html">Ajouter une session</a>
+		  <a href="ModifierSession.html">Modifier une session</a>
+		</div>
+	</div>
+
+	</div>
+
+
+
+
+<!--------------- LE BOUTTON QUI AFFICHE LE COLLAPSE MENU ---------->
+
+	<button class="collapse" type="button" onclick="maFonction()">
+		<img class="collapse_menu" src="https://img.icons8.com/material-outlined/48/000000/menu--v1.png"/>
+	</button>
+
+	<div id="maDIV" style="display:none;">
+
+		<div class="position-des-listes">
+
+			<div>
+				<button class="dropdown"> <i class="fas fa-home"></i> Tableau de bord </button>
+			</div>
+			
+			<button class="dropdown"> <i class="fas user1 fa-user-graduate"></i> Étudiants <i class="fa fa-caret-down"></i> </button>
+
+			<div class="dropdown-container">
+			  <a href="ListeEtudiants.html">Tous les étudiants</a>
+			  <a href="EtudiantsDemandeInscription.html">Demande d'inscription</a>
+			  <a href="StudentDemandeCertif.html">Demande de certification</a>
+			</div>
+
+			<button class="dropdown"> <i class="fas fa-graduation-cap"></i> Certifications <i class="fa fa-caret-down"></i> </button>
+
+			<div class="dropdown-container">
+			 <a href="EtudiantInfo.html">Mes certifications</a>
+			 <a href="InstructeurDemande.html">Demande de certification</a>
+			</div>
+
+			<button class="dropdown"> <i class="fas user2 fa-chalkboard-teacher"></i> Sessions <i class="fa fa-caret-down"></i> </button>
+
+			<div class="dropdown-container">
+			  <a href="ListeEtudiantsSession.html">Toutes les sessions</a>
+			  <a href="AjouterSession.html">Ajouter une session</a>
+			  <a href="ModifierSession.html">Modifier une session</a>
+			</div>
+		</div>
+		
+	</div>
+
+<!--------------- LE BOUTTON QUI AFFICHE LE COLLAPSE MENU ---------->
+
+
+	<div  class="tooltip">
+    	<img class="img1 hidee" src="images/ensam1.png">
+    </div>
+
+<!--------------------- LA PREMIERE SECTION  ------------------->
+
+    <section class="section1">
+
+    	<header>
+
+	<!---------- Search Widget   --------->
+
+			<nav class="navigation-bar-1">
+				<div id="search_widget" class="search-widget">
+   					<a class="searchbtn" href="#"><i class="fa">&#xf002;</i></a>
+   					<input class="searchtxt" type="text" name="" placeholder="Rechercher">    
+				</div>
+
+	<!------- Profile session/ LOGout  ------>
+
+			<div class="action">
+				<div class="profile" onclick="ShowAndHide()">
+					<img src="images/face4.jpg">
+				</div>
+
+	<!---------- Hide and Show js Profile session/ LOGout  --------->
+
+					<div class="menu" id="#menu" >
+						<h3> User Name <span class="fas fa-caret-down"></span> </h3>
+						<ul>
+							<li><img src="images/profile.png"><a href="index.html">Mon profil</a></li>
+							<li><img src="images/logout.png"><a href="login.html">Se déconnecter</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</nav>
+
+<!--------------------- Welcome message  ------------------->
+
+			<div class="welcome">
+				<p class="welcome-user"> Dashboard </p>
+				<div class="notification">Welcome <span class="notification-number"> User</span></div>
+			</div>
+
+		</header>
+
+<!--------------------- disposition of elements  ---------------->
+
+
+	<div class="global">
+			<div class="total-et-nv-etudiants">
+			    <div class="etudiants-Tl">
+					<p class="title1" >Total des <br> étudiants</p>
+					<a class="top" href="#"><i class="fas  fa-user-graduate" id="emoji"></i> <span class="nombre"> 324 </span>  </a>
+		        </div>
+		        <div class="nv-etudiants">
+					<p class="title1">Nouveaux <br> étudiants</p>
+					<a class="top" href="#"><i class="fas  fa-user-graduate" id="emoji"></i> <span class="nombre"> 23 </span>  </a>
+				</div>
+			</div>
+			<div class="instruct-formation-Tl">
+				<div class="intructeurs">
+					<p class="title1">Total des instructeurs</p>
+					<a class="top" href="#"><i class="fas fa-chalkboard-teacher" id="emoji"></i> <span class="nombre"> 45 </span>  </a>
+				</div>
+				<div class="formations-Tl">
+					<p class="title1" >Total des formations</p>
+					<a class="top" href="#"><i class="fas fa-graduation-cap" id="emoji"></i> <span class="nombre"> 17 </span>  </a>
+				</div>
+			</div>
+	</div>
+
+	
+		<div class="line-chart-block block">
+     <div class="line-chart">
+       <div class='grafico'>
+       <ul class='eje-y'>
+         <li data-ejeY='30'></li>
+         <li data-ejeY='20'></li>
+         <li data-ejeY='10'></li>
+         <li data-ejeY='0'></li>
+       </ul>
+       <ul class='eje-x'>
+         <li>Août</li>
+         <li>Septembre</li>
+         <li>Octobre</li>
+       </ul>
+         <span data-valeur='25'>
+           <span data-valeur='8'>
+             <span data-valeur='13'>
+               <span data-valeur='5'>   
+                 <span data-valeur='23'>   
+                 <span data-valeur='12'>
+                     <span data-valeur='15'>
+                     </span></span></span></span></span></span></span>
+       </div>
+       
+     </div>
+                    <ul class="time-lenght horizontal-list">
+                        <li><a class="time-lenght-btn" href="#05">SEMAINE</a></li>
+                        <li><a class="time-lenght-btn" href="#11">MOIS</a></li>
+                        <li><a class="time-lenght-btn" href="#21">ANNEE</a></li>
+                    </ul>
+                    <ul class="month-data clear">
+                        <li>
+                            <p>AVRIL<span class="scnd-font-color"> 2021</span></p>
+                            <p><span class="entypo-plus increment"> </span>21%</p>
+                        </li>
+                        <li>
+                            <p>MAI<span class="scnd-font-color"> 2021</span></p>
+                            <p><span class="entypo-plus increment"> </span>48%</p>
+                        </li>
+                        <li>
+                            <p>JUIN<span class="scnd-font-color"> 2021</span></p>
+                            <p><span class="entypo-plus increment"> </span>35%</p>
+                        </li>
+                    </ul>
+                </div>
+
+
+<!--------------------- Les formations Populaires  ------------------->
+
+		<div class="paragraph">
+			<h4>Les formations les plus demandées</h4>
+			<p>
+	         <i class="fas fa-angle-right"></i>HCIA-AI Course <br>
+	         <i class="fas fa-angle-right"></i>HCIE-Big Data Mining Course <br>
+	         <i class="fas fa-angle-right"></i>HCIA-5G Course </p>
+		</div>
+		<div class="donut-chart-block block2" style="width: 450px;height: 401px;"> 
+                    <h2 class="titular">CERTIFICATIONS</h2>
+                    <div class="donut-chart">
+
+      <div id="porcion1" class="recorte"><div class="quesito gi" data-rel="15"></div></div>
+     <div id="porcion2" class="recorte"><div class="quesito iagi" data-rel="39"></div></div>
+     <div id="porcion3" class="recorte"><div class="quesito msei" data-rel="11"></div></div>
+     <div id="porcionFin" class="recorte"><div class="quesito gm" data-rel="14"></div></div>
+     <div id="porcionFinn" class="recorte"><div class="quesito gem" data-rel="21"></div></div>
+
+
+            <p class="center-date">2021</p>        
+    </div>
+    <ul class="filière-percentages horizontal-list">
+        <li>
+            <p class="gi filière scnd-font-color">GI</p>
+            <p class="filière-percentage">15<sup>%</sup></p>
+        </li>
+        <li>
+            <p class="iagi filière scnd-font-color">IAGI</p>
+            <p class="filière-percentage">39<sup>%</sup></p>
+        </li>
+        <li>
+            <p class="gm filière scnd-font-color">GM</p>
+            <p class="filière-percentage">11<sup>%</sup></p>
+        </li>
+        <li>
+            <p class="msei filière scnd-font-color">MSEI</p>
+            <p class="filière-percentage">14<sup>%</sup></p>
+        </li>
+        <li>
+            <p class="gem filière scnd-font-color">GEM</p>
+            <p class="filière-percentage">21<sup>%</sup></p>
+        </li>
+    </ul>
+</div>
+<div class="calendar-month block"> <!-- CALENDAR MONTH (RIGHT-CONTAINER) -->
+    <div class="arrow-btn-container">
+        <a class="arrow-btn left" href="#202"><span class="icon fontawesome-angle-left"></span></a>
+        <h2 class="titular">NOVEMBRE 2021</h2>
+        <a class="arrow-btn right" href="#203"><span class="icon fontawesome-angle-right"></span></a>
+    </div>
+    <table class="calendar">
+        <thead class="days-week">
+            <tr>
+                <th>D</th>
+                <th>L</th>
+                <th>MA</th>
+                <th>ME</th>
+                <th>J</th>
+                <th>V</th>
+                <th>S</th>
+            </tr>
+        </thead>
+        <tbody>                            
+        	<tr>
+                <td></td>
+                <td><a class="scnd-font-color" href="#102">1</a></td>
+                <td><a class="scnd-font-color" href="#103">2</a></td>
+                <td><a class="scnd-font-color" href="#104">3</a></td>
+                <td><a class="scnd-font-color" href="#105">4</a></td>
+                <td><a class="today" href="#106">5</a></td>
+                <td><a class="scnd-font-color" href="#107">6</a></td>
+            </tr>
+            <tr>
+                <td><a class="scnd-font-color" href="#108">7</a></td>
+                <td><a class="scnd-font-color" href="#109">8</a></td>
+                <td><a class="scnd-font-color" href="#110">9</a></td>
+                <td><a class="scnd-font-color" href="#111">10</a></td>
+                <td><a class="scnd-font-color" href="#112">11</a></td>
+                <td><a class="scnd-font-color" href="#113">12</a></td>
+                <td><a class="scnd-font-color" href="#114">13</a></td>
+            </tr>
+            <tr>
+                <td><a class="scnd-font-color" href="#115">14</a></td>
+                <td><a class="scnd-font-color" href="#116">15</a></td>
+                <td><a class="scnd-font-color" href="#117">16</a></td>
+                <td><a class="scnd-font-color" href="#118">17</a></td>
+                <td><a class="scnd-font-color" href="#119">18</a></td>
+                <td><a class="scnd-font-color" href="#120">19</a></td>
+                <td><a class="scnd-font-color" href="#121">20</a></td>
+            </tr>
+            <tr>
+                <td><a class="scnd-font-color" href="#122">21</a></td>
+                <td><a class="scnd-font-color" href="#123">22</a></td>
+                <td><a class="scnd-font-color" href="#124">23</a></td>
+                <td><a class="scnd-font-color" href="#125">24</a></td>
+                <td><a class="scnd-font-color" href="#125">25</a></td>
+                <td><a class="scnd-font-color" href="#125">26</a></td>
+                <td><a class="scnd-font-color" href="#125">27</a></td>
+            </tr>
+            <tr>
+                <td><a class="scnd-font-color" href="#125">28</a></td>
+                <td><a class="scnd-font-color" href="#125">29</a></td>
+                <td><a class="scnd-font-color" href="#125">30</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
+
+
+
+  <script>
+
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+  });
+
+  searchBtn.addEventListener("click", ()=>{ 
+    sidebar.classList.toggle("open");
+  });
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right")
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu")
+   }
+  }
+  </script>
+  <script type="text/javascript">
+      var dropdown = document.getElementsByClassName("dropdown");
+var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+}
+
+function ShowAndHide ()
+    {
+      var x = document.getElementById("#menu");
+      if (x.style.display === "block") 
+      {
+        x.style.display = "none";
+      }else{
+
+        x.style.display = "block";
+      }
+    }
+
+function maFonction() {
+  var div = document.getElementById("maDIV");
+  if (div.style.display === "none") {
+    div.style.display = "block";
+  } else {
+    div.style.display = "none";
+  }
+}
+
+
+</script>
+</body>
+
+

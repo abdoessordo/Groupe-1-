@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/page1.css">
+    <title>ENSAM CASA - Ecole Nationale Supérieure d'Arts et Métiers</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/academy.jpg"> <!--L'icône--> 
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+        <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Tableau de bord</span>
+        </a>
+         <span class="tooltip">Tableau de bord</span>
+      </li>
+      <li class="dropdown" onclick="myFunction()">
+       <a href="index.html">
+         <i class="fas user1 fa-user-graduate"></i>
+         <span class="links_name">Etudiants</span>
+       </a>
+       <span class="tooltip">Etudiants</span>
+     </li>
+     <div class="dropdown-container">
+        <a href="ListeEtudiants.html">Tous les étudiants</a>
+        <a href="EtudiantsDemandeInscription.html">Demande d'inscription</a>
+        <a href="StudentDemandeCertif.html">Demande de certification</a>
+      </div>
+     <li class="dropdown">
+       <a href="#">
+         <i class="fas fa-graduation-cap"></i> 
+         <span class="links_name">Certifications</span>
+       </a>
+       <span class="tooltip">Certifications</span>
+     </li>
+     <div class="dropdown-container">
+          <a href="EtudiantInfo.html">Mes certifications</a>
+       <a href="InstructeurDemande.html">Demande de certification</a>
+      </div>
+     <li class="dropdown">
+       <a href="#">
+         <i class="fas user2 fa-chalkboard-teacher"></i>
+         <span class="links_name">Sessions</span>
+       </a>
+       <span class="tooltip">Sessions</span>
+     </li>
+     <div class="dropdown-container">
+        <a href="ListeEtudiantsSession.html">Toutes les sessions <br></a>
+        <a href="AjouterSession.html">Ajouter une session</a>
+        <a href="ModifierSession.html">Modifier une session</a>
+      </div>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="images/face4.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Username</div>
+             <div class="job">Enseignant-chercheur</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+   <section class="home-section">
+
+      <header>
+
+    <div  class="tooltip">
+            <img class="img1 hide" src="images/Ensam.png">
+            <img class="img1 hidee" src="images/ensam1.png">
+          </div>
+  <!---------- Search Widget   --------->
+
+      <nav class="navigation-bar-1">
+        <div id="search_widget" class="search-widget">
+            <a class="searchbtn" href="#"><i class="fa">&#xf002;</i></a>
+            <input class="searchtxt" type="text" name="" placeholder="Rechercher">    
+        </div>
+
+  <!------- Profile session/ LOGout  ------>
+
+      <div class="action">
+        <div class="profile" onclick="ShowAndHide()">
+          <img src="images/face4.jpg">
+        </div>
+
+  <!---------- Hide and Show js Profile session/ LOGout  --------->
+
+          <div class="menu" id="#menu" >
+            <h3> User Name <span class="fas fa-caret-down"></span> </h3>
+            <ul>
+              <li><img src="images/profile.png"><a href="#">Mon profil</a></li>
+              <li><img src="images/logout.png"><a href="#">Se déconnecter</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+                    <img class="illu" src="images/Analyze.png">
+                  <div class="container">
+                    <form  action="AjouterSessionDB.php" method="post">  
+                     <div class="welcome">
+                      <p class="welcome-user"> <b>Ajouter une session</b></p>
+                     </div>                 
+                      <div class="form-group">
+                        <label for="full Name">Nom :</label>
+                        <input type="text" class="form-control" id="full-name" placeholder="Veuillez saisir votre nom" name="nom">                
+                      </div>
+                      <div class="form-group">
+                      <label for="descripFr">Academy :</label>
+                        <select class="custom-select custom-select-sm acads-select" name="academy">
+                          <option> lorem ipsum 1 </option>
+                          <option> lorem ipsum 2 </option>
+                          <option> lorem ipsum 3 </option>               
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="descripFr">Certification :</label>
+                        <select class="custom-select custom-select-sm certif-select" name="certif">
+                            <option> lorem ipsum </option>                          
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="datestart">Date du début :</label>
+                        <input type="date" name="datestart" id="datestart" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="dateend">Date de la fin :</label>
+                        <input type="date" name="dateend" id="dateend" class="form-control">
+                      </div>                                          
+                     <div class="button">
+                     <input type="submit" class="btn btn-primary btn-block   btn_ajouter" value="Ajouter">
+                     </div>
+                     <div class="button">
+                     <input type="submit" class="btn btn-secondary btn-block btn_annuler" value="Annuler">
+                     </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+      
+  </section>
+   <footer> <!--FOOTER-->
+        <p>Copyright &copy; 2021 All rights reserved</p>
+    </footer>
+  <script>
+
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+  });
+
+  searchBtn.addEventListener("click", ()=>{ 
+    sidebar.classList.toggle("open");
+  });
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right")
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu")
+   }
+  }
+  </script>
+  <script type="text/javascript">
+      var dropdown = document.getElementsByClassName("dropdown");
+var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+}
+
+function ShowAndHide ()
+    {
+      var x = document.getElementById("#menu");
+      if (x.style.display === "block") 
+      {
+        x.style.display = "none";
+      }else{
+
+        x.style.display = "block";
+      }
+    }
+
+
+</script>
+</body>
+</html>

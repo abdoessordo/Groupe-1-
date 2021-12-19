@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/page2.css">
+    <title>ENSAM CASA - Ecole Nationale Supérieure d'Arts et Métiers</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/academy.jpg"> <!--L'icône--> 
+   </head>
+<body>
+<div class="sidebar">
+    <div class="logo-details">
+        <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Tableau de bord</span>
+        </a>
+         <span class="tooltip">Tableau de bord</span>
+      </li>
+      <li class="dropdown" onclick="myFunction()">
+       <a href="#">
+         <i class="fas user1 fa-user-graduate"></i>
+         <span class="links_name">Etudiants</span>
+       </a>
+       <span class="tooltip">Etudiants</span>
+     </li>
+     <div class="dropdown-container">
+        <a href="ListeEtudiants.html">Tous les étudiants</a>
+        <a href="EtudiantsDemandeInscription.html">Demande d'inscription</a>
+        <a href="StudentDemandeCertif.html">Demande de certification</a>
+      </div>
+     <li class="dropdown">
+       <a href="#">
+         <i class="fas fa-graduation-cap"></i> 
+         <span class="links_name">Certifications</span>
+       </a>
+       <span class="tooltip">Certifications</span>
+     </li>
+     <div class="dropdown-container">
+          <a href="EtudiantInfo.html">Mes certifications</a>
+       <a href="InstructeurDemande.html">Demande de certification</a>
+      </div>
+     <li class="dropdown">
+       <a href="#">
+         <i class="fas user2 fa-chalkboard-teacher"></i>
+         <span class="links_name">Sessions</span>
+       </a>
+       <span class="tooltip">Sessions</span>
+     </li>
+     <div class="dropdown-container">
+        <a href="ListeEtudiantsSession.html">Toutes les sessions <br></a>
+        <a href="AjouterSession.html">Ajouter une session</a>
+        <a href="ModifierSession.html">Modifier une session</a>
+      </div>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="images/face4.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Username</div>
+             <div class="job">Enseignant-chercheur</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+   <section class="home-section">
+
+      <header>
+
+    <div  class="tooltip">
+      <img class="img1 hide" src="images/Ensam.png">
+      <img class="img1 hidee" src="images/ensam1.png">
+    </div>
+
+  <!---------- Search Widget   --------->
+
+      <nav class="navigation-bar-1">
+        <div id="search_widget" class="search-widget">
+            <a class="searchbtn" href="#"><i class="fa">&#xf002;</i></a>
+            <input class="searchtxt" type="text" name="" placeholder="Rechercher">    
+        </div>
+
+  <!------- Profile session/ LOGout  ------>
+
+      <div class="action">
+        <div class="profile" onclick="ShowAndHide()">
+          <img src="images/face4.jpg">
+        </div>
+
+  <!---------- Hide and Show js Profile session/ LOGout  --------->
+
+          <div class="menu" id="#menu" >
+            <h3> User Name <span class="fas fa-caret-down"></span> </h3>
+            <ul>
+              <li><img src="images/profile.png"><a href="index.html">Mon profil</a></li>
+              <li><img src="images/logout.png"><a href="login.html">Se déconnecter</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+      <div class="titre">
+        <p class="titre-user"> Les informations de l'étudiant </p>
+      </div>
+    </header>
+    <div class="details">
+      <img src="images/photo.gif">
+      <div  class="info">
+        <ul>
+          <li><strong>Nom et prénom :</strong> lorem ipsum</li>
+          <li><strong>Nom d'utilisateur :</strong> lorem ipsum</li>
+          <li><strong>Email :</strong> lorem ipsum</li>
+          <li><strong>Téléphone :</strong> lorem ipsum</li>
+          <li><strong>Statut :</strong> lorem ipsum</li>
+          <li><strong>Date d'inscription :</strong> lorem ipsum</li>
+          <li><strong>Type :</strong> lorem ipsum</li>
+        </ul>        
+      </div>
+    </div>
+
+    <div class="titre">
+        <p class="titre-user">Son cours </p>
+      </div>
+      <table class="table-fill">
+        <thead>
+          <tr>
+            <th class="text-left">#</th>
+            <th class="text-left">Cours</th>
+            <th class="text-left">Instructeur encadrant</th>
+            <th class="text-left">Statut</th>
+          </tr>
+        </thead>
+        <tbody class="table-hover">
+          <tr>
+            <td class="text-left">x</td>
+            <td class="text-left">lorem ipsum</td>
+            <td class="text-left">lorem ipsum</td>
+            <td class="text-left">lorem ipsum</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="titre">
+        <p class="titre-user">Ses certifications </p>
+      </div>
+      <table class="table-fill">
+        <thead>
+          <tr>
+            <th class="text-left">#</th>
+            <th class="text-left">Certification</th>
+            <th class="text-left">Fichier</th>
+          </tr>
+        </thead>
+        <tbody class="table-hover">
+          <tr>
+            <td class="text-left">x</td>
+            <td class="text-left">lorem ipsum</td>
+            <td class="text-left">lorem ipsum</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer> <!--FOOTER-->
+        <p>Copyright &copy; 2021 All rights reserved</p>
+    </footer>
+<script>
+
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+  });
+
+  searchBtn.addEventListener("click", ()=>{ 
+    sidebar.classList.toggle("open");
+  });
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right")
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu")
+   }
+  }
+  </script>
+  <script type="text/javascript">
+      var dropdown = document.getElementsByClassName("dropdown");
+var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+}
+
+function ShowAndHide ()
+    {
+      var x = document.getElementById("#menu");
+      if (x.style.display === "block") 
+      {
+        x.style.display = "none";
+      }else{
+
+        x.style.display = "block";
+      }
+    }
+function HideContainer()
+{
+  var p = document.getElementById("#drop").value;
+  if (p.style.display === "block") 
+      {
+        p.style.display = "none";
+      }else{
+
+        p.style.display = "block";
+      }
+}
+
+</script>
+  </body>
+

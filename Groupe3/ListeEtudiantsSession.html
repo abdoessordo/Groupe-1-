@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/stylee.css">
+	<title>ENSAM CASA - Ecole Nationale Supérieure d'Arts et Métiers</title>
+	<link rel="icon" href="images/academy.jpg"> <!--L'icône--> 
+<link rel="icon" href="images/academy.jpg"> <!--L'icône--> 
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Lexend+Deca:wght@200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="logo-details">
+        <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Tableau de bord</span>
+        </a>
+         <span class="tooltip">Tableau de bord</span>
+      </li>
+      <li class="dropdown" onclick="myFunction()">
+       <a href="#">
+         <i class="fas user1 fa-user-graduate"></i>
+         <span class="links_name">Etudiants</span>
+       </a>
+       <span class="tooltip">Etudiants</span>
+     </li>
+     <div class="dropdown-container">
+        <a href="ListeEtudiants.html">Tous les étudiants</a>
+        <a href="EtudiantsDemandeInscription.html">Demande d'inscription</a>
+        <a href="StudentDemandeCertif.html">Demande de certification</a>
+      </div>
+     <li class="dropdown">
+       <a href="#">
+         <i class="fas fa-graduation-cap"></i> 
+         <span class="links_name">Certifications</span>
+       </a>
+       <span class="tooltip">Certifications</span>
+     </li>
+     <div class="dropdown-container">
+          <a href="EtudiantInfo.html">Mes certifications </a>
+         
+       <a href="InstructeurDemande.html">Demande de certification </a>
+      </div>
+     <li class="dropdown">
+       <a href="#">
+         <i class="fas user2 fa-chalkboard-teacher"></i>
+         <span class="links_name">Sessions</span>
+       </a>
+       <span class="tooltip">Sessions</span>
+     </li>
+     <div class="dropdown-container">
+        <a href="ListeEtudiantsSession.html">Toutes les sessions <br></a>
+        <a href="AjouterSession.html">Ajouter une session</a>
+        <a href="ModifierSession.html">Modifier une session</a>
+      </div>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="images/face4.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Username</div>
+             <div class="job">Enseignant-chercheur</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+
+   <section class="home-section home-section1">
+
+      <header>
+
+   <div  class="tooltip">
+            <img class="img1 hide" src="images/Ensam.png">
+            <img class="img1 hidee" src="images/ensam1.png">
+          </div>
+  <!---------- Search Widget   --------->
+
+      <nav class="navigation-bar-1">
+        <div id="search_widget" class="search-widget">
+            <a class="searchbtn" href="#"><i class="fa">&#xf002;</i></a>
+            <input class="searchtxt" type="text" name="" placeholder="Rechercher">    
+        </div>
+
+  <!------- Profile session/ LOGout  ------>
+
+      <div class="action">
+        <div class="profile" onclick="ShowAndHide()">
+          <img src="images/face4.jpg">
+        </div>
+
+  <!---------- Hide and Show js Profile session/ LOGout  --------->
+
+          <div class="menu" id="#menu" >
+            <h3> User Name <span class="fas fa-caret-down"></span> </h3>
+            <ul>
+              <li><img src="images/profile.png"><a href="index.html">Mon profil</a></li>
+              <li><img src="images/logout.png"><a href="login.html">Se déconnecter</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+		<div class="welcome2">
+			<p class="liste_des_demandes"> Liste des Etudiants et Sessions  </p>
+		</div>
+
+		<div class="search_and_text both">	
+
+				<div>
+					<p class="text_u"> Chercher dans Les Sessions :</p>
+				</div>
+
+				<div id="search_id" class="search-widget1">
+			   		<a class="searchbtn" href="#"><i class="fa" style=" margin-top: 7px;">&#xf002;</i></a>
+			   		<input class="searchtxt" type="text" name="" placeholder="Rechercher">    
+				</div>
+
+		</div>
+
+
+<!---------------------- SESSION 1  ----------------------->
+
+		<div class="big_table"> 
+
+			<div class="sessions">
+				<p class="text_session"> Session 1 </p>
+			</div>
+
+			<br>
+
+			<table>
+
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Nom Etudiant</th>
+						<th>Adresse E-mail</th>
+						<th>Numero de Telephone</th>
+						<th>Type</th>
+						<th> Status</th>
+						<th> Action</th>
+			  		</tr>
+				</thead>
+		
+			  <tbody>
+			  	<tr>
+			    	<td>1</td>
+			    	<td>User Name</td>
+			    	<td>UserName@gmail.com</td>
+			    	<td>+212612345679</td>
+			    	<td> idle </td>
+			    	<td> TBF </td>
+			    	<td>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/color/16/fa314a/checkmark--v1.png"/> </button>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/ios-filled/16/fa314a/x.png"/> </button>
+			    		<button class="fichier_button"> <img src="https://img.icons8.com/metro/16/000000/i-lowercase.png"/> </button>
+			    	</td>
+			  	</tr>
+
+			  	<tr>
+			    	<td>1</td>
+			    	<td>User Name</td>
+			    	<td>UserName@gmail.com</td>
+			    	<td>+212612345679</td>
+			    	<td> idle </td>
+			    	<td> TBF </td>
+			    	<td>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/color/16/fa314a/checkmark--v1.png"/> </button>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/ios-filled/16/fa314a/x.png"/> </button>
+			    		<button class="fichier_button"> <img src="https://img.icons8.com/metro/16/000000/i-lowercase.png"/> </button>
+			    	</td>
+			  	</tr>
+
+			  	<tr>
+			    	<td>1</td>
+			    	<td>User Name</td>
+			    	<td>UserName@gmail.com</td>
+			    	<td>+212612345679</td>
+			    	<td> idle </td>
+			    	<td> TBF </td>
+			    	<td>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/color/16/fa314a/checkmark--v1.png"/> </button>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/ios-filled/16/fa314a/x.png"/> </button>
+			    		<button class="fichier_button"> <img src="https://img.icons8.com/metro/16/000000/i-lowercase.png"/> </button>
+			    	</td>
+			  	</tr>
+
+			  	<tr>
+			    	<td>1</td>
+			    	<td>User Name</td>
+			    	<td>UserName@gmail.com</td>
+			    	<td>+212612345679</td>
+			    	<td> idle </td>
+			    	<td> TBF </td>
+			    	<td>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/color/16/fa314a/checkmark--v1.png"/> </button>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/ios-filled/16/fa314a/x.png"/> </button>
+			    		<button class="fichier_button"> <img src="https://img.icons8.com/metro/16/000000/i-lowercase.png"/> </button>
+			    	</td>
+			  	</tr>
+
+			  	
+
+	
+			  </tbody>
+			  
+			</table>
+		</div>
+
+
+<!---------------------- SESSION 2  ----------------------->
+
+		<div class="big_table"> 
+
+			<div class="sessions">
+				<p class="text_session"> Session 2 </p>
+			</div>
+
+			<br>
+
+			<table>
+
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Nom Etudiant</th>
+						<th>Adresse E-mail</th>
+						<th>Numero de Telephone</th>
+						<th>Type</th>
+						<th> Status</th>
+						<th> Action</th>
+			  		</tr>
+				</thead>
+		
+			  <tbody>
+			  	<tr>
+			    	<td>1</td>
+			    	<td>User Name</td>
+			    	<td>UserName@gmail.com</td>
+			    	<td>+212612345679</td>
+			    	<td> idle </td>
+			    	<td> TBF </td>
+			    	<td>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/color/16/fa314a/checkmark--v1.png"/> </button>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/ios-filled/16/fa314a/x.png"/> </button>
+			    		<button class="fichier_button"> <img src="https://img.icons8.com/metro/16/000000/i-lowercase.png"/> </button>
+			    	</td>
+			  	</tr>
+
+			  	<tr>
+			    	<td>1</td>
+			    	<td>User Name</td>
+			    	<td>UserName@gmail.com</td>
+			    	<td>+212612345679</td>
+			    	<td> idle </td>
+			    	<td> TBF </td>
+			    	<td>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/color/16/fa314a/checkmark--v1.png"/> </button>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/ios-filled/16/fa314a/x.png"/> </button>
+			    		<button class="fichier_button"> <img src="https://img.icons8.com/metro/16/000000/i-lowercase.png"/> </button>
+			    	</td>
+			  	</tr>
+
+			  	<tr>
+			    	<td>1</td>
+			    	<td>User Name</td>
+			    	<td>UserName@gmail.com</td>
+			    	<td>+212612345679</td>
+			    	<td> idle </td>
+			    	<td> TBF </td>
+			    	<td>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/color/16/fa314a/checkmark--v1.png"/> </button>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/ios-filled/16/fa314a/x.png"/> </button>
+			    		<button class="fichier_button"> <img src="https://img.icons8.com/metro/16/000000/i-lowercase.png"/> </button>
+			    	</td>
+			  	</tr>
+
+			  	<tr>
+			    	<td>1</td>
+			    	<td>User Name</td>
+			    	<td>UserName@gmail.com</td>
+			    	<td>+212612345679</td>
+			    	<td> idle </td>
+			    	<td> TBF </td>
+			    	<td>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/color/16/fa314a/checkmark--v1.png"/> </button>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/ios-filled/16/fa314a/x.png"/> </button>
+			    		<button class="fichier_button"> <img src="https://img.icons8.com/metro/16/000000/i-lowercase.png"/> </button>
+			    	</td>
+			  	</tr>
+			  </tbody>
+			  
+			</table>
+		</div>
+
+<!---------------------- SESSION 3  ----------------------->
+
+		<div class="big_table"> 
+
+			<div class="sessions">
+				<p class="text_session"> Session 3 </p>
+			</div>
+
+			<br>
+
+			<table>
+
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Nom Etudiant</th>
+						<th>Adresse E-mail</th>
+						<th>Numero de Telephone</th>
+						<th>Type</th>
+						<th> Status</th>
+						<th> Action</th>
+			  		</tr>
+				</thead>
+		
+			  <tbody>
+			  	<tr>
+			    	<td>1</td>
+			    	<td>User Name</td>
+			    	<td>UserName@gmail.com</td>
+			    	<td>+212612345679</td>
+			    	<td> idle </td>
+			    	<td> TBF </td>
+			    	<td>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/color/16/fa314a/checkmark--v1.png"/> </button>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/ios-filled/16/fa314a/x.png"/> </button>
+			    		<button class="fichier_button"> <img src="https://img.icons8.com/metro/16/000000/i-lowercase.png"/> </button>
+			    	</td>
+			  	</tr>
+
+			  	<tr>
+			    	<td>1</td>
+			    	<td>User Name</td>
+			    	<td>UserName@gmail.com</td>
+			    	<td>+212612345679</td>
+			    	<td> idle </td>
+			    	<td> TBF </td>
+			    	<td>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/color/16/fa314a/checkmark--v1.png"/> </button>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/ios-filled/16/fa314a/x.png"/> </button>
+			    		<button class="fichier_button"> <img src="https://img.icons8.com/metro/16/000000/i-lowercase.png"/> </button>
+			    	</td>
+			  	</tr>
+
+			  	<tr>
+			    	<td>1</td>
+			    	<td>User Name</td>
+			    	<td>UserName@gmail.com</td>
+			    	<td>+212612345679</td>
+			    	<td> idle </td>
+			    	<td> TBF </td>
+			    	<td>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/color/16/fa314a/checkmark--v1.png"/> </button>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/ios-filled/16/fa314a/x.png"/> </button>
+			    		<button class="fichier_button"> <img src="https://img.icons8.com/metro/16/000000/i-lowercase.png"/> </button>
+			    	</td>
+			  	</tr>
+
+			  	<tr>
+			    	<td>1</td>
+			    	<td>User Name</td>
+			    	<td>UserName@gmail.com</td>
+			    	<td>+212612345679</td>
+			    	<td> idle </td>
+			    	<td> TBF </td>
+			    	<td>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/color/16/fa314a/checkmark--v1.png"/> </button>
+			    		<button class="fichier_button" > <img src="https://img.icons8.com/ios-filled/16/fa314a/x.png"/> </button>
+			    		<button class="fichier_button"> <img src="https://img.icons8.com/metro/16/000000/i-lowercase.png"/> </button>
+			    	</td>
+			  	</tr>
+			  </tbody>
+			  
+			</table>
+		</div>
+
+
+
+
+	</section>
+
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+  });
+
+  searchBtn.addEventListener("click", ()=>{ 
+    sidebar.classList.toggle("open");
+  });
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right")
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu")
+   }
+  }
+  </script>
+  <script type="text/javascript">
+      var dropdown = document.getElementsByClassName("dropdown");
+var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+}
+
+function ShowAndHide ()
+    {
+      var x = document.getElementById("#menu");
+      if (x.style.display === "block") 
+      {
+        x.style.display = "none";
+      }else{
+
+        x.style.display = "block";
+      }
+    }
+
+</script>
+</body>
+</html>
