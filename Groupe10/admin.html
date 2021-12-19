@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Gestion des rendez-vous | Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="css/admin_css.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Docteur Raiss</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">Accueil</a></li>
+        <li><a href="#services">Menu</a></li>
+        <li><a href="#students">mes rendez-vous</a></li>
+        <li><a href="#timeTable">mes Messages</a></li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+    <img style="height: 150px; width: 300px;" src="image/logo_dr.png" alt="Dr tazi">
+  <h1>Administration</h1> 
+    
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Docteur Raiss</h2><br>
+      <h4>Le Docteur Raiss Abderrahmane est un chirurgien ophtalmique utilisant la technique du Lasik, et spécialisé et reconnu dans 3 grands domaines de la chirurgie ophtalmique au Maroc.</h4><br>
+      
+      <br><a href="index.html"><button class="btn btn-default btn-lg">Consulté site officiel</button></a>
+    </div>
+    <div class="col-sm-4">
+        <img src="image/DrSaiss.jpg" alt="Est Essaouira" class="img-circle"  width="410" height="300">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+    <h2>SERVICES</h2>
+    <h4>Accès rapide</h4>
+    <br>
+    <div class="row slideanim">
+   
+      <div class="col-sm-4">
+        <a href="#students"><span class="glyphicon glyphicon-stats logo-small"></span></a>
+        <h4>Rendez-Vous</h4>
+        <p>Voir les Rendez-vous</p>
+      </div>
+      <div class="col-sm-4">
+        <a href="#"><span class="glyphicon glyphicon-comment logo-small"></span></a>
+        <h4>Messages</h4>
+        <p>Voir les Rendez-vous</p>
+      </div>
+      <div class="col-sm-4">
+        <a href="#foter"><span class="glyphicon glyphicon-plus-sign logo-small"></span></a>
+        <h4>Admin</h4>
+        <p>Voir les Administrateurs</p>
+      </div>
+  
+    </div>
+    <br><br>
+    
+  </div>
+  
+  <div id="students" class="container-fluid bg-grey">
+    <div class="panel-heading"><center><b style="font-family: 'Times New Roman', Times, serif; font-size: xx-large;" >Les Rendez-Vous :</b></center></div>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>CIN</th>
+                <th>Nom et Prénom</th>
+                <th>Adresse</th>
+                <th>Date rendez-vous</th>
+                <th>Horaire</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>DJ857216</td>
+                <td>KArime Raji</td>
+                <td>Anassi rue hassan II  N°12 casablanca </td>
+                <td>08-12-2021</td>
+                <td>11h-12h</td>
+                <td></td>
+                <td>
+                    <a href="#deleteclient" class="delete" data-toggle="modal"><i class="material-icons"
+                            data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>YT872516</td>
+                <td>Amal ESSAKHI</td>
+                <td>hay mohammadi rue abdelkader torres N°15 casablanca </td>
+                <td>07-12-2021</td>
+                <td>09h-10h</td>
+                <td></td>
+                <td>
+                    <a href="#deleteclient" class="delete" data-toggle="modal"><i class="material-icons"
+                            data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>DJ857216</td>
+                <td>KArime Raji</td>
+                <td>Anassi rue hassan II  N°12 casablanca </td>
+                <td>06-12-2021</td>
+                <td>11h-12h</td>
+                <td></td>
+                <td>
+                    <a href="#deleteclient" class="delete" data-toggle="modal"><i class="material-icons"
+                            data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>YT872516</td>
+                <td>Amal ESSAKHI</td>
+                <td>hay mohammadi rue abdelkader torres N°15 casablanca </td>
+                <td>04-12-2021</td>
+                <td>09h-10h</td>
+                <td></td>
+                <td>
+                    <a href="#deleteclient" class="delete" data-toggle="modal"><i class="material-icons"
+                            data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>YT872516</td>
+                <td>Amal ESSAKHI</td>
+                <td>hay mohammadi rue abdelkader torres N°15 casablanca </td>
+                <td>03-12-2021</td>
+                <td>09h-10h</td>
+                <td></td>
+                <td>
+                    <a href="#deleteclient" class="delete" data-toggle="modal"><i class="material-icons"
+                            data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>DJ857216</td>
+                <td>KArime Raji</td>
+                <td>Anassi rue hassan II  N°12 casablanca </td>
+                <td>02-12-2021</td>
+                <td>11h-12h</td>
+                <td></td>
+                <td>
+                    <a href="#deleteclient" class="delete" data-toggle="modal"><i class="material-icons"
+                            data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>DK342681</td>
+                <td>sami ESSGHIR</td>
+                <td>hay mohammadi rue andalous N°23 casablanca </td>
+                <td>01-12-2021</td>
+                <td>14h-15h</td>
+                <td></td>
+                <td>
+                    <a href="#deleteclient" class="delete" data-toggle="modal"><i class="material-icons"
+                            data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+  </div>
+
+
+
+
+  
+  <div id="timeTable" class="container-fluid bg-grey">
+    <div class="panel-heading"><center><b style="font-family: 'Times New Roman', Times, serif; font-size: xx-large;" >Les Messages :</b></center></div>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Nom </th>
+                <th>Prénom</th>
+                <th>E-Mail</th>
+                <th>Message</th>
+                <th>Sujet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>DAMOU</td>
+                <td>Walid</td>
+                <td>walid.damou.2015@gmail.com</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, at provident? Corporis recusandae tenetur est culpa, neque quam non optio sint similique vitae blanditiis nobis beatae excepturi quis voluptate animi.</td>
+                <td>QUESTION</td>
+                <td>
+                    <a href="#deleteclient" class="delete" data-toggle="modal"><i class="material-icons"
+                            data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>DAMOU</td>
+                <td>Walid</td>
+                <td>walid.damou.2015@gmail.com</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, at provident? Corporis recusandae tenetur est culpa, neque quam non optio sint similique vitae blanditiis nobis beatae excepturi quis voluptate animi.</td>
+                <td>QUESTION</td>
+                <td>
+                    <a href="#deleteclient" class="delete" data-toggle="modal"><i class="material-icons"
+                            data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>DAMOU</td>
+                <td>Walid</td>
+                <td>walid.damou.2015@gmail.com</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, at provident? Corporis recusandae tenetur est culpa, neque quam non optio sint similique vitae blanditiis nobis beatae excepturi quis voluptate animi.</td>
+                <td>QUESTION</td>
+                <td>
+                    <a href="#deleteclient" class="delete" data-toggle="modal"><i class="material-icons"
+                            data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>DAMOU</td>
+                <td>Walid</td>
+                <td>walid.damou.2015@gmail.com</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, at provident? Corporis recusandae tenetur est culpa, neque quam non optio sint similique vitae blanditiis nobis beatae excepturi quis voluptate animi.</td>
+                <td>QUESTION</td>
+                <td>
+                    <a href="#deleteclient" class="delete" data-toggle="modal"><i class="material-icons"
+                            data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                </td>
+            </tr>
+            
+            
+        </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+
+
+<footer id="foter" class="container-fluid text-center">
+  <div class="container" style="width: 80%; height: 30%; margin: auto;border-radius: 10px; box-shadow: 5px 5px 20px 20px rgba(192, 185, 185, 0.884);">
+    <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;">
+        Espace administrateur
+    </h1>
+    <br>
+    <div class="col-sm-4">
+      <div class="card">        
+        <div class="card-body">
+          <img style="position: relative; height: 200px; border: 2px solid white; border-radius: 5px;" src="/image/ismail.jpg" alt="">
+          <h4 style="font-family: 'Times New Roman', Times, serif;" > <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> SUPER-Admin</h4>
+        </div>
+        <hr>
+        <div class="card-body">
+          <h3>ESSAGAR Ismail</h3>          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">        
+        <div class="card-body">
+          <img style="position: relative; height: 200px; border: 2px solid white; border-radius: 5px;" src="/image/walid.jpg" alt="">
+          <h4 style="font-family: 'Times New Roman', Times, serif;" > <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> SUPER-Admin</h4>
+        </div>
+        <hr>
+        <div class="card-body">
+          <h3>DAMOU Walid</h3>          
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-sm-4">
+      <div class="card">        
+        <div class="card-body">
+          <img style="position: relative; height: 200px; border: 2px solid white; border-radius: 5px;" src="" alt="">
+          <h4 style="font-family: 'Times New Roman', Times, serif;" > <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> SOUS-Admin</h4>
+        </div>
+        <hr>
+        <div class="card-body">
+            <h3>
+              ADMIN-Admin
+            </h3>
+            <button style="margin-top: -13%; border-radius: 7px; position: absolute; margin-left: 25%; height: 37px; background-color: rgba(36, 199, 22, 0.233);" class="btn btn-success pull-right" type="submit"  ><span class="glyphicon glyphicon-pencil"></span></button>                
+            <button style="margin-top: -13%; border-radius: 7px; position: absolute; margin-left: 40%; height: 37px; background-color: rgba(206, 49, 44, 0.26);" class="btn btn-danger pull-right" type="submit"  ><span class="glyphicon glyphicon-trash"></span></button>                                                             
+                   
+        </div>
+      </div>
+    </div><br>
+    
+  </div><br> <br>
+    <div style="float: right;" class="col-sm-6 slideanim">
+        <h2>Ajouter un admin</h2>
+        <div class="col-sm-12 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Email Admin" type="text" required>
+        </div>
+        <div class="col-sm-12 form-group">
+          <input class="form-control" id="email" name="email" placeholder="password Admin" type="email" required>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">Ajouter</button>
+            </div>
+        </div>
+    </div>
+    <br><br>
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p> ESSAGAR Ismail &nbsp;&nbsp;  -- &nbsp;&nbsp;  DAMOU Walid  </p>
+  <p>Project Graduation</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+</body>
+</html>
+
+
+
+
+
+
