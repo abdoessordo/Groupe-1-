@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  
+  background: url("images/bg.png");
+   background-size: cover;
+
+}
+.nav-links{
+   height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:  #ffffff;
+  padding: 6px 48px;
+  border-radius: 10px;
+  float:center;
+  box-shadow: 0 5px 3px rgb(133, 51, 255);
+}
+.nav-links li{
+  list-style: none;
+  margin: 0 12px;
+}
+.nav-links li a{
+  position: relative;
+  color:#333;
+
+  font-size: px;
+  font-weight: 500;
+  /*font-family: 'Maven Pro', sans-serif;*/
+  font-family: 'Poppins', sans-serif;
+ padding: 6px 33px;
+  text-decoration: none;
+}
+.nav-links li a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #34efef;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover:before{
+  width: 100%;
+}
+.nav-links li.center a:before{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container{
+  display: inline-flex; 
+  width: 100%;
+
+}
+.inner{
+  margin-top: 135px;
+  margin-left: 47px;
+
+  width: 44%;
+
+  
+}
+.inner h1{
+  margin-left: 160px;
+  color: rgb(133, 51, 255);
+ 
+  margin-bottom: 20px;
+}
+
+.image img 
+{
+  width: 300px;
+  height: 300px;
+}
+.wrapper{
+  /*display: inline-flex; */
+
+}
+.inner p{
+  color: #e6ecff;
+}
